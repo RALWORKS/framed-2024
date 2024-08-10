@@ -1,0 +1,25 @@
+{
+    "Map/SizeTest": {
+        "height": 4300,
+        "width": 2
+    },
+    "activeFile": "",
+    "expandedProjectPaths": [
+    ],
+    "fileStates": {
+    },
+    "last.imagePath": "/home/eleven/AGJ2024",
+    "map.tileHeight": 124,
+    "map.tileWidth": 124,
+    "map.width": 20,
+    "openFiles": [
+    ],
+    "project": "demo-maze.tiled-project",
+    "recentFiles": [
+    ],
+    "tileset.lastUsedFormat": "tsx",
+    "tileset.tileSize": {
+        "height": 124,
+        "width": 124
+    }
+}
