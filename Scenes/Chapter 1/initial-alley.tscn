@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://n3ps665svqra"]
+
+[ext_resource type="Script" path="res://Scripts/Chapter 1/initial-alley.gd" id="1_pjoon"]
+
+[node name="Initial-alley" type="Node2D"]
+script = ExtResource("1_pjoon")
