@@ -50,14 +50,9 @@ It's possible to get this teen to tell you where you supposedly met, which is ri
 a BUS STOP. Apparently you stumbled off the bus and ripped the scooter out of his/her
 hands.
 
-### 3: Bus Stop
-Only one bus comes here. If you cross to the *opposite* side of the street, it'll take
-you back where you came from. But do you want that?
+### 3: McKenzie the Younger
+At the bus stop, you run into a homeless man.
 
-While you deliberate on what to do, you are accosted by a homeless man who seems very
-happy to see you.
-
-### 4: McKenzie the Younger
 This man seems very relieved that you're OK. He tells you cops are coming and points you
 back into the alley.
 
@@ -67,10 +62,10 @@ brother, and that he believes you.
 This is the second opportunity to learn the name of Jeff McKenzie. If you haven't been
 told yet, McKenzie the Younger will connect the dots.
 
-### 4.5: Police Chase #2
+### 3.5: Police Chase #2
 Same as above
 
-### 5: Dorian's Boss
+### 4: Dorian's Boss
 You run head on into somebody for the second time in as many hours.
 
 It's your boss. And he is *really* wigged out seeing you here. Actually, he looks like
@@ -86,13 +81,13 @@ Well.
 
 A man you *definitely* don't know pulls up in a black car. The boss jumps in and leaves.
 
-### 6: McKenzie the Younger #2
+### 5: McKenzie the Younger #2
 The homeless man from earlier runs head on into you, pushing you back into the alley.
 He says those are the guys that dragged you up the stairs when you were passed out.
 
 You should run. The cops will be here soon.
 
-### 6.5 Police Chase, intercut with flashbacks.
+### 5.5 Police Chase, intercut with flashbacks.
 The flashbacks can be pure text over a black screen, or use very limited visuals.
 They should be short & punchy.
 
