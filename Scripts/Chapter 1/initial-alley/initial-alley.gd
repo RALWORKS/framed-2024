@@ -67,8 +67,6 @@ func _ready():
 	marie_1.visible = false
 	marie_phone.visible = true
 	
-	Music.heart()
-	
 	pass # Replace with function body.
 
 

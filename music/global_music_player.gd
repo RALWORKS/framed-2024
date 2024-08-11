@@ -16,6 +16,8 @@ func _ready():
 	calm()
 
 func calm():
+	if calm_playing:
+		return
 	if horror_playing:
 		$Horror/Fader.play("off")
 		horror_playing = false
@@ -26,6 +28,8 @@ func calm():
 	calm_playing = true
 
 func heart():
+	if heart_playing:
+		return
 	if horror_playing:
 		$Horror/Fader.play("off")
 		horror_playing = false
@@ -36,6 +40,8 @@ func heart():
 	heart_playing = true
 
 func horror():
+	if horror_playing:
+		return
 	if calm_playing:
 		$Calm/Fader.play("off")
 		calm_playing = false
