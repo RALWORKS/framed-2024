@@ -13,7 +13,7 @@
 [ext_resource type="Texture2D" uid="uid://bw0n5w5nx5and" path="res://Assets/Initial_alley_01.png" id="10_gn18g"]
 [ext_resource type="Texture2D" uid="uid://2a2rvrhmkrbl" path="res://Assets/initial-alley_bus_ticket.png" id="11_ji2kj"]
 [ext_resource type="Texture2D" uid="uid://dvba2v7f0yidm" path="res://Assets/Dorian_3qrtr_close_angry.png" id="12_kkf28"]
-[ext_resource type="Texture2D" uid="uid://bo1uaxtt2mn4m" path="res://Assets/Dorian_hand_for_chin.png" id="13_ysn8f"]
+[ext_resource type="Texture2D" uid="uid://cuj04hytqeucm" path="res://Assets/Dorian_hand_for_chin.png" id="13_ysn8f"]
 [ext_resource type="Texture2D" uid="uid://bghe5teofntj6" path="res://Assets/Officer_profile_full.png" id="15_1ucq1"]
 
 [sub_resource type="Animation" id="Animation_wrvmk"]
