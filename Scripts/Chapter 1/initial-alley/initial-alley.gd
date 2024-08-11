@@ -38,6 +38,11 @@ func _ready():
 	[null, $"Panel 13", OPTIONS],
 	["Panel 14", $"Panel 14", TRANSITION],
 	[null, $"Panel 15", OPTIONS],
+	["Panel 16a", $"Panel 16"],
+	["Panel 16b", null],
+	["Panel 16c", null],
+	["Panel 16d", null],
+	["Panel 17", $"Panel 17", TRANSITION, END]
 	]
 	play()
 	
@@ -94,7 +99,9 @@ func _process(delta):
 		return
 
 func end():
-	pass
+	Transition.transition()
+	await Transition.on_transition_finished
+	get_tree().change_scene_to_file("res://tiles/tile_map.tscn")
 
 func goto(to_index):
 	index = to_index

@@ -1,9 +1,10 @@
-[gd_scene load_steps=30 format=3 uid="uid://n3ps665svqra"]
+[gd_scene load_steps=37 format=3 uid="uid://n3ps665svqra"]
 
 [ext_resource type="Script" path="res://Scripts/Chapter 1/initial-alley/initial-alley.gd" id="1_kd3uj"]
 [ext_resource type="Texture2D" uid="uid://ks6ltpyibhaw" path="res://Assets/Initial_alley_background_only.png" id="2_cyom3"]
 [ext_resource type="Texture2D" uid="uid://kk1umvxxppwt" path="res://Assets/Chapter 1/initial-alley/Dorian_3qrtr_close_blank.png" id="2_f6xsi"]
 [ext_resource type="Texture2D" uid="uid://b5qu8ics07up3" path="res://Assets/Chapter 1/initial-alley/Dorian_3qrtr_close_confused.png" id="3_ey63g"]
+[ext_resource type="Texture2D" uid="uid://c08bvriqe0xji" path="res://Assets/Dorian_3qrtr_close_confused.png" id="3_nqdkh"]
 [ext_resource type="Texture2D" uid="uid://1cq7arrcntf0" path="res://Assets/Chapter 1/initial-alley/Dorian_3qrtr_close_phonehand.png" id="4_rk45k"]
 [ext_resource type="Texture2D" uid="uid://y5j0g1se5stw" path="res://Assets/Chapter 1/initial-alley/Marbury and 3rd sign.png" id="5_8wlly"]
 [ext_resource type="Texture2D" uid="uid://c2vngb7uq2uhw" path="res://Assets/Chapter 1/initial-alley/Phone_marie.png" id="6_fmysh"]
@@ -12,7 +13,8 @@
 [ext_resource type="Texture2D" uid="uid://bw0n5w5nx5and" path="res://Assets/Initial_alley_01.png" id="10_gn18g"]
 [ext_resource type="Texture2D" uid="uid://2a2rvrhmkrbl" path="res://Assets/initial-alley_bus_ticket.png" id="11_ji2kj"]
 [ext_resource type="Texture2D" uid="uid://dvba2v7f0yidm" path="res://Assets/Dorian_3qrtr_close_angry.png" id="12_kkf28"]
-[ext_resource type="Texture2D" uid="uid://dosbjfpoph6e" path="res://Assets/Dorian_hand_for_chin.png" id="13_ysn8f"]
+[ext_resource type="Texture2D" uid="uid://de2lal40uiu17" path="res://Assets/Dorian_hand_for_chin.png" id="13_ysn8f"]
+[ext_resource type="Texture2D" uid="uid://bghe5teofntj6" path="res://Assets/Officer_profile_full.png" id="15_1ucq1"]
 
 [sub_resource type="Animation" id="Animation_wrvmk"]
 resource_name = "Scene 1"
@@ -1117,6 +1119,746 @@ tracks/36/keys = {
 "update": 0,
 "values": [Vector2(1456, 1224)]
 }
+tracks/37/type = "value"
+tracks/37/imported = false
+tracks/37/enabled = true
+tracks/37/path = NodePath("Panel 16/Dialogue16a:position")
+tracks/37/interp = 1
+tracks/37/loop_wrap = true
+tracks/37/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1456, 1304)]
+}
+tracks/38/type = "value"
+tracks/38/imported = false
+tracks/38/enabled = true
+tracks/38/path = NodePath("Panel 16/Dialogue16a:visible")
+tracks/38/interp = 1
+tracks/38/loop_wrap = true
+tracks/38/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/39/type = "value"
+tracks/39/imported = false
+tracks/39/enabled = true
+tracks/39/path = NodePath("Panel 16/Dialogue16b:visible")
+tracks/39/interp = 1
+tracks/39/loop_wrap = true
+tracks/39/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/40/type = "value"
+tracks/40/imported = false
+tracks/40/enabled = true
+tracks/40/path = NodePath("Panel 16/Dialogue16c:visible")
+tracks/40/interp = 1
+tracks/40/loop_wrap = true
+tracks/40/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/41/type = "value"
+tracks/41/imported = false
+tracks/41/enabled = true
+tracks/41/path = NodePath("Panel 16/Dialogue16d:visible")
+tracks/41/interp = 1
+tracks/41/loop_wrap = true
+tracks/41/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/42/type = "value"
+tracks/42/imported = false
+tracks/42/enabled = true
+tracks/42/path = NodePath("Panel 16/Dialogue16b:position")
+tracks/42/interp = 1
+tracks/42/loop_wrap = true
+tracks/42/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1456, 480)]
+}
+tracks/43/type = "value"
+tracks/43/imported = false
+tracks/43/enabled = true
+tracks/43/path = NodePath("Panel 16/Dialogue16c:position")
+tracks/43/interp = 1
+tracks/43/loop_wrap = true
+tracks/43/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1456, 680)]
+}
+tracks/44/type = "value"
+tracks/44/imported = false
+tracks/44/enabled = true
+tracks/44/path = NodePath("Panel 16/Dialogue16d:position")
+tracks/44/interp = 1
+tracks/44/loop_wrap = true
+tracks/44/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1456, 136)]
+}
+tracks/45/type = "value"
+tracks/45/imported = false
+tracks/45/enabled = true
+tracks/45/path = NodePath("Panel 17/BG2:visible")
+tracks/45/interp = 1
+tracks/45/loop_wrap = true
+tracks/45/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/46/type = "value"
+tracks/46/imported = false
+tracks/46/enabled = true
+tracks/46/path = NodePath("Panel 17/BG:visible")
+tracks/46/interp = 1
+tracks/46/loop_wrap = true
+tracks/46/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/47/type = "value"
+tracks/47/imported = false
+tracks/47/enabled = true
+tracks/47/path = NodePath("Panel 17/Dorean17:position")
+tracks/47/interp = 1
+tracks/47/loop_wrap = true
+tracks/47/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(552, 0)]
+}
+tracks/48/type = "value"
+tracks/48/imported = false
+tracks/48/enabled = true
+tracks/48/path = NodePath("Panel 17/Dorean17:texture")
+tracks/48/interp = 1
+tracks/48/loop_wrap = true
+tracks/48/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("12_kkf28")]
+}
+tracks/49/type = "value"
+tracks/49/imported = false
+tracks/49/enabled = true
+tracks/49/path = NodePath("Panel 17/Dialogue17a:position")
+tracks/49/interp = 1
+tracks/49/loop_wrap = true
+tracks/49/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1456, 288)]
+}
+tracks/50/type = "value"
+tracks/50/imported = false
+tracks/50/enabled = true
+tracks/50/path = NodePath("Panel 17/Dialogue17a:visible")
+tracks/50/interp = 1
+tracks/50/loop_wrap = true
+tracks/50/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/51/type = "value"
+tracks/51/imported = false
+tracks/51/enabled = true
+tracks/51/path = NodePath("Panel 17/Dialogue17a:scale")
+tracks/51/interp = 1
+tracks/51/loop_wrap = true
+tracks/51/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1)]
+}
+tracks/52/type = "value"
+tracks/52/imported = false
+tracks/52/enabled = true
+tracks/52/path = NodePath("Panel 17/Dorean17:visible")
+tracks/52/interp = 1
+tracks/52/loop_wrap = true
+tracks/52/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/53/type = "value"
+tracks/53/imported = false
+tracks/53/enabled = true
+tracks/53/path = NodePath("Panel 17/Cop17:visible")
+tracks/53/interp = 1
+tracks/53/loop_wrap = true
+tracks/53/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/54/type = "value"
+tracks/54/imported = false
+tracks/54/enabled = true
+tracks/54/path = NodePath("Panel 17/BG2:position")
+tracks/54/interp = 1
+tracks/54/loop_wrap = true
+tracks/54/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1049, 550)]
+}
+tracks/55/type = "value"
+tracks/55/imported = false
+tracks/55/enabled = true
+tracks/55/path = NodePath("Panel 17/BG2:scale")
+tracks/55/interp = 1
+tracks/55/loop_wrap = true
+tracks/55/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0.571759, 0.571759)]
+}
+tracks/56/type = "value"
+tracks/56/imported = false
+tracks/56/enabled = true
+tracks/56/path = NodePath("Panel 17/Cop17:position")
+tracks/56/interp = 1
+tracks/56/loop_wrap = true
+tracks/56/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1073, 261)]
+}
+tracks/57/type = "value"
+tracks/57/imported = false
+tracks/57/enabled = true
+tracks/57/path = NodePath("Panel 17/Cop17:scale")
+tracks/57/interp = 1
+tracks/57/loop_wrap = true
+tracks/57/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0.450926, 0.450926)]
+}
+tracks/58/type = "value"
+tracks/58/imported = false
+tracks/58/enabled = true
+tracks/58/path = NodePath("Panel 17/BlackScreen17:visible")
+tracks/58/interp = 1
+tracks/58/loop_wrap = true
+tracks/58/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/59/type = "value"
+tracks/59/imported = false
+tracks/59/enabled = true
+tracks/59/path = NodePath("Panel 17/BlackScreen17:modulate")
+tracks/59/interp = 1
+tracks/59/loop_wrap = true
+tracks/59/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/60/type = "value"
+tracks/60/imported = false
+tracks/60/enabled = true
+tracks/60/path = NodePath("Panel 17/Dialogue17b:visible")
+tracks/60/interp = 1
+tracks/60/loop_wrap = true
+tracks/60/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+
+[sub_resource type="Animation" id="Animation_hlo53"]
+resource_name = "Panel 16a"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Panel 16/Dialogue16a:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1456, 1304), Vector2(1456, 248)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Panel 16/Dialogue16a:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Panel 16/Dialogue16b:visible")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Panel 16/Dialogue16c:visible")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Panel 16/Dialogue16d:visible")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+
+[sub_resource type="Animation" id="Animation_dhfpw"]
+resource_name = "Panel 16b"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Panel 16/Dialogue16a:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Panel 16/Dialogue16b:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Panel 16/Dialogue16b:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1456, 1384), Vector2(1456, 480)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Panel 16/Dialogue16c:visible")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Panel 16/Dialogue16d:visible")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+
+[sub_resource type="Animation" id="Animation_4g7m2"]
+resource_name = "Panel 16c"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Panel 16/Dialogue16a:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Panel 16/Dialogue16b:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Panel 16/Dialogue16c:visible")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Panel 16/Dialogue16d:visible")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Panel 16/Dialogue16c:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(2480, 400), Vector2(1456, 400)]
+}
+
+[sub_resource type="Animation" id="Animation_a2rl4"]
+resource_name = "Panel 16d"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Panel 16/Dialogue16d:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Panel 16/Dialogue16c:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Panel 16/Dialogue16b:visible")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Panel 16/Dialogue16a:visible")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Panel 16/Dialogue16d:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(2528, 136), Vector2(1456, 136)]
+}
+
+[sub_resource type="Animation" id="Animation_ojy8t"]
+resource_name = "Panel 17"
+length = 3.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Panel 17/BG2:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.8),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [false, true]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Panel 17/BG:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.8),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, false]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Panel 17/Dorean17:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(552, 0)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Panel 17/Dorean17:texture")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [ExtResource("12_kkf28"), ExtResource("3_nqdkh")]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Panel 17/Dialogue17a:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.5, 0.8),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(1456, 288), Vector2(1456, 288), Vector2(1888, 296), Vector2(1456, 288)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Panel 17/Dialogue17a:visible")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.8),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [false, true, false]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("Panel 17/Dialogue17a:scale")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0.1, 0.5, 0.8),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(1, 1), Vector2(1.54014, 1.54014), Vector2(1, 1)]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("Panel 17/Dorean17:visible")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0, 0.8),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, false]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("Panel 17/Cop17:visible")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(0, 0.8),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [false, true]
+}
+tracks/9/type = "value"
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/path = NodePath("Panel 17/BG2:position")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/keys = {
+"times": PackedFloat32Array(0.8, 1.2, 2),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(1049, 550), Vector2(-50.333, 1002.3), Vector2(-50.333, 1002.3)]
+}
+tracks/10/type = "value"
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/path = NodePath("Panel 17/BG2:scale")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/keys = {
+"times": PackedFloat32Array(0.8, 1.2, 2),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(0.571759, 0.571759), Vector2(1.4, 1.4), Vector2(1.4, 1.4)]
+}
+tracks/11/type = "value"
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/path = NodePath("Panel 17/Cop17:position")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/keys = {
+"times": PackedFloat32Array(0.8, 1.2, 2),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(1073, 261), Vector2(-100, 117), Vector2(-100, 117)]
+}
+tracks/12/type = "value"
+tracks/12/imported = false
+tracks/12/enabled = true
+tracks/12/path = NodePath("Panel 17/Cop17:scale")
+tracks/12/interp = 1
+tracks/12/loop_wrap = true
+tracks/12/keys = {
+"times": PackedFloat32Array(0.8, 1.2, 2),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(0.450926, 0.450926), Vector2(1.25, 1.25), Vector2(1.25, 1.25)]
+}
+tracks/13/type = "value"
+tracks/13/imported = false
+tracks/13/enabled = true
+tracks/13/path = NodePath("Panel 17/BlackScreen17:visible")
+tracks/13/interp = 1
+tracks/13/loop_wrap = true
+tracks/13/keys = {
+"times": PackedFloat32Array(0, 1.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [false, true]
+}
+tracks/14/type = "value"
+tracks/14/imported = false
+tracks/14/enabled = true
+tracks/14/path = NodePath("Panel 17/BlackScreen17:modulate")
+tracks/14/interp = 1
+tracks/14/loop_wrap = true
+tracks/14/keys = {
+"times": PackedFloat32Array(0, 1.5, 2),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/15/type = "value"
+tracks/15/imported = false
+tracks/15/enabled = true
+tracks/15/path = NodePath("Panel 17/Dialogue17b:visible")
+tracks/15/interp = 1
+tracks/15/loop_wrap = true
+tracks/15/keys = {
+"times": PackedFloat32Array(0, 2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [false, true]
+}
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_duj7y"]
 _data = {
@@ -1124,6 +1866,11 @@ _data = {
 "Panel 10": SubResource("Animation_gsdn7"),
 "Panel 12": SubResource("Animation_paerh"),
 "Panel 14": SubResource("Animation_20utx"),
+"Panel 16a": SubResource("Animation_hlo53"),
+"Panel 16b": SubResource("Animation_dhfpw"),
+"Panel 16c": SubResource("Animation_4g7m2"),
+"Panel 16d": SubResource("Animation_a2rl4"),
+"Panel 17": SubResource("Animation_ojy8t"),
 "Panel 2": SubResource("Animation_m8tvq"),
 "Panel 3": SubResource("Animation_0i2cu"),
 "Panel 4a": SubResource("Animation_jks75"),
@@ -1580,27 +2327,28 @@ text = "DORIAN
 Who would I have killed? Maybe I should call Marie back and ask her who's supposed to be dead."
 
 [node name="Panel 15" type="Node2D" parent="."]
+visible = false
 
 [node name="BG" type="Sprite2D" parent="Panel 15"]
 position = Vector2(0, 1065)
 texture = ExtResource("2_cyom3")
 metadata/_edit_use_anchors_ = true
 
-[node name="Dorean14" type="Sprite2D" parent="Panel 15"]
+[node name="Dorean15" type="Sprite2D" parent="Panel 15"]
 position = Vector2(-436.072, 2.85596)
 texture = ExtResource("12_kkf28")
 centered = false
 
-[node name="DoreanHand14" type="Sprite2D" parent="Panel 15"]
+[node name="DoreanHand15" type="Sprite2D" parent="Panel 15"]
 position = Vector2(-415, 48)
 rotation = -0.0404813
 texture = ExtResource("13_ysn8f")
 centered = false
 
-[node name="Dialogue14" type="Node2D" parent="Panel 15"]
+[node name="Dialogue15" type="Node2D" parent="Panel 15"]
 position = Vector2(1456, 280)
 
-[node name="DorianDialogue14" parent="Panel 15/Dialogue14" instance=ExtResource("7_33j4g")]
+[node name="DorianDialogue14" parent="Panel 15/Dialogue15" instance=ExtResource("7_33j4g")]
 offset_left = -520.0
 offset_top = -112.0
 offset_right = 360.0
@@ -1622,4 +2370,127 @@ offset_top = 704.0
 offset_right = 1669.0
 offset_bottom = 808.0
 text = "Who am I kidding? No way"
-to_index = 14
+to_index = 18
+
+[node name="Panel 16" type="Node2D" parent="."]
+
+[node name="BG" type="Sprite2D" parent="Panel 16"]
+position = Vector2(0, 1065)
+texture = ExtResource("2_cyom3")
+metadata/_edit_use_anchors_ = true
+
+[node name="Dorean15" type="Sprite2D" parent="Panel 16"]
+position = Vector2(-436.072, 2.85596)
+texture = ExtResource("12_kkf28")
+centered = false
+
+[node name="DoreanHand16" type="Sprite2D" parent="Panel 16"]
+position = Vector2(-415, 48)
+rotation = -0.0404813
+texture = ExtResource("13_ysn8f")
+centered = false
+
+[node name="Dialogue16a" type="Node2D" parent="Panel 16"]
+position = Vector2(1456, 1304)
+
+[node name="DorianDialogue16" parent="Panel 16/Dialogue16a" instance=ExtResource("7_33j4g")]
+offset_left = -520.0
+offset_top = -112.0
+offset_right = 360.0
+offset_bottom = 56.0
+text = "DORIAN
+Maybe it was my boss. He's certainly screwed me over. Hmm. That's not quite right."
+
+[node name="Dialogue16b" type="Node2D" parent="Panel 16"]
+visible = false
+position = Vector2(1456, 480)
+
+[node name="DorianDialogue16b" parent="Panel 16/Dialogue16b" instance=ExtResource("7_33j4g")]
+offset_left = -520.0
+offset_top = -112.0
+offset_right = 360.0
+offset_bottom = 56.0
+text = "DORIAN
+My landlord? No, that feels further from the truth."
+
+[node name="Dialogue16c" type="Node2D" parent="Panel 16"]
+visible = false
+position = Vector2(1456, 680)
+
+[node name="DorianDialogue16c" parent="Panel 16/Dialogue16c" instance=ExtResource("7_33j4g")]
+offset_left = -520.0
+offset_top = -112.0
+offset_right = 360.0
+offset_bottom = 160.0
+text = "DORIAN
+I saw my boss last night. Did we run into each other at the bar? Could I have gotten so drunk I somehow ... ? No. That's not it. Damn. My head really is a mess if I can't piece even this much together."
+
+[node name="Dialogue16d" type="Node2D" parent="Panel 16"]
+visible = false
+position = Vector2(1456, 136)
+
+[node name="DorianDialogue16d" parent="Panel 16/Dialogue16d" instance=ExtResource("7_33j4g")]
+offset_left = -520.0
+offset_top = 384.0
+offset_right = 360.0
+offset_bottom = 552.0
+text = "DORIAN
+In that case, working theory: I've murdered my boss ... Christ. "
+
+[node name="Panel 17" type="Node2D" parent="."]
+visible = false
+
+[node name="BG" type="Sprite2D" parent="Panel 17"]
+position = Vector2(0, 1065)
+texture = ExtResource("2_cyom3")
+metadata/_edit_use_anchors_ = true
+
+[node name="BG2" type="Sprite2D" parent="Panel 17"]
+visible = false
+position = Vector2(1049, 550)
+scale = Vector2(0.571759, 0.571759)
+texture = ExtResource("10_gn18g")
+metadata/_edit_use_anchors_ = true
+
+[node name="Dorean17" type="Sprite2D" parent="Panel 17"]
+visible = false
+position = Vector2(552, 0)
+texture = ExtResource("12_kkf28")
+centered = false
+
+[node name="Cop17" type="Sprite2D" parent="Panel 17"]
+position = Vector2(1073, 261)
+scale = Vector2(0.450926, 0.450926)
+texture = ExtResource("15_1ucq1")
+centered = false
+
+[node name="Dialogue17a" type="Node2D" parent="Panel 17"]
+visible = false
+position = Vector2(1456, 288)
+
+[node name="DorianDialogue17" parent="Panel 17/Dialogue17a" instance=ExtResource("7_33j4g")]
+offset_left = -1080.0
+offset_top = -48.0
+offset_right = -680.0
+offset_bottom = 104.0
+theme_override_font_sizes/normal_font_size = 80
+text = "FREEZE!"
+
+[node name="BlackScreen17" type="ColorRect" parent="Panel 17"]
+visible = false
+modulate = Color(1, 1, 1, 0)
+offset_right = 1920.0
+offset_bottom = 1080.0
+color = Color(0, 0, 0, 1)
+
+[node name="Dialogue17b" type="Node2D" parent="Panel 17"]
+visible = false
+position = Vector2(1456, 288)
+
+[node name="DorianDialogue17" parent="Panel 17/Dialogue17b" instance=ExtResource("7_33j4g")]
+offset_left = -1215.0
+offset_top = 151.0
+offset_right = 231.0
+offset_bottom = 384.0
+theme_override_font_sizes/normal_font_size = 100
+text = "I gotta get outta here!"
