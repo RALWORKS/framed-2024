@@ -1,7 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://dm3e78qgxuweh"]
+[gd_scene load_steps=6 format=3 uid="uid://dm3e78qgxuweh"]
 
 [ext_resource type="Script" path="res://Scripts/title_screen.gd" id="1_6isyv"]
+[ext_resource type="Texture2D" uid="uid://bihfxq87qsk53" path="res://Assets/Chapter 1/Dorian_3qrtr_full_silhouette.png" id="2_eop5b"]
 [ext_resource type="FontFile" uid="uid://bmxov1aoclv2k" path="res://Assets/Fonts/Courier New.ttf" id="2_pm5pl"]
+[ext_resource type="Texture2D" uid="uid://y5j0g1se5stw" path="res://Assets/Chapter 1/initial-alley/Marbury and 3rd sign.png" id="3_8mpew"]
 [ext_resource type="PackedScene" uid="uid://dlqm5dgeomybm" path="res://Assets/Dialogue/button.tscn" id="3_wss4s"]
 
 [node name="Title Screen" type="Control"]
@@ -16,12 +18,23 @@ offset_right = 1152.0
 offset_bottom = 647.0
 color = Color(0, 0, 0, 1)
 
+[node name="Dorian" type="Sprite2D" parent="."]
+modulate = Color(0.741176, 0.2, 0.2, 0.282353)
+position = Vector2(204.011, 367.799)
+scale = Vector2(0.580906, 0.580906)
+texture = ExtResource("2_eop5b")
+
+[node name="Sign" type="Sprite2D" parent="."]
+position = Vector2(906.647, 330.66)
+scale = Vector2(0.583408, 0.583408)
+texture = ExtResource("3_8mpew")
+
 [node name="Control" type="Control" parent="."]
 anchors_preset = 0
-offset_left = 388.624
-offset_top = 229.699
-offset_right = 734.624
-offset_bottom = 536.699
+offset_left = 351.618
+offset_top = 192.286
+offset_right = 697.618
+offset_bottom = 499.286
 metadata/_edit_group_ = true
 
 [node name="Play-Button" parent="Control" instance=ExtResource("3_wss4s")]
@@ -41,11 +54,12 @@ offset_bottom = 227.036
 text = "Quit"
 
 [node name="RichTextLabel" type="RichTextLabel" parent="."]
+visible = false
 layout_mode = 0
-offset_left = 76.804
-offset_top = 115.012
-offset_right = 489.804
-offset_bottom = 192.012
+offset_left = 82.8043
+offset_top = 460.647
+offset_right = 495.804
+offset_bottom = 537.647
 theme_override_fonts/normal_font = ExtResource("2_pm5pl")
 theme_override_font_sizes/normal_font_size = 50
 text = "Marbury & 3rd"

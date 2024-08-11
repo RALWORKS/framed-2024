@@ -16,6 +16,14 @@ extends Node2D
 var index = 0
 var paused = false
 
+var OPTIONS = "OPTIONS"
+var HORROR = "HORROR"
+var HEART = "HEART"
+var CALM = "CALM"
+var END = "END"
+var GAMEOVER = "GAMEOVER"
+var TRANSITION = "TRANSITION"
+
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	
@@ -24,37 +32,37 @@ func _ready():
 	
 	#anim_play.play("Panel 1")
 	
+	
 	sequence = [
-	["Panel 1", panel1],
-	["Panel 2", panel2],
-	["Panel 3", panel3],
-	["Panel 4a", panel4],
+	["Panel 1", $"Panel 1"],
+	["Panel 2", $"Panel 2"],
+	["Panel 3", $"Panel 3", TRANSITION],
+	["Panel 4a", $"Panel 4", TRANSITION],
 	["Panel 4b", null],
 	["Panel 4c", null],
 	["Panel 4d", null],
-	["Panel 5", panel5],
-	["Panel 6", panel6],
-	["Panel 7", panel7],
-	["Panel 8", panel8],
+	["Panel 5", $"Panel 5"],
+	["Panel 6", $"Panel 6", TRANSITION],
+	["Panel 7", $"Panel 7", TRANSITION],
+	["Panel 8", $"Panel 8", TRANSITION],
+	[null, $"Panel 9", OPTIONS, TRANSITION]
 	]
 	play()
 	
 	
 
 func hide_panels():
-	panel1.visible = false
-	panel2.visible = false
-	panel3.visible = false
-	panel4.visible = false
-	panel5.visible = false
-	panel6.visible = false
-	panel7.visible = false
-	panel8.visible = false
+	for c in $".".get_children():
+		if is_instance_of(c, Node2D):
+			c.visible = false
 
 var sequence = []
 
 func next():
-	if paused:
+	if END in sequence[index]:
+		end()
+		return
+	if paused or OPTIONS in sequence[index]:
 		return
 	index+=1
 	play()
@@ -65,11 +73,24 @@ func next():
 func play():
 	var page = sequence[index]
 	
+	if TRANSITION in page:
+		Transition.transition()
+		await Transition.on_transition_finished
+	
 	if page[1] != null:
 		flip(page[1])
 	
 	if page[0] != null:
 		$AnimationPlayer.play(page[0])
+	
+	
+	if HORROR in page:
+		Music.horror()
+	elif CALM in page:
+		Music.calm()
+	elif HEART in page:
+		Music.heart()
+
 
 func flip(to):
 	hide_panels()
@@ -79,3 +100,10 @@ func _process(delta):
 	if Input.is_action_just_pressed("Next"):
 		next()
 		return
+
+func end():
+	pass
+
+func goto(to_index):
+	index = to_index
+	play()

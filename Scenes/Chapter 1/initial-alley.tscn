@@ -1,12 +1,14 @@
-[gd_scene load_steps=21 format=3 uid="uid://n3ps665svqra"]
+[gd_scene load_steps=23 format=3 uid="uid://n3ps665svqra"]
 
 [ext_resource type="Script" path="res://Scripts/Chapter 1/initial-alley/initial-alley.gd" id="1_kd3uj"]
+[ext_resource type="Texture2D" uid="uid://ks6ltpyibhaw" path="res://Assets/Initial_alley_background_only.png" id="2_cyom3"]
 [ext_resource type="Texture2D" uid="uid://kk1umvxxppwt" path="res://Assets/Chapter 1/initial-alley/Dorian_3qrtr_close_blank.png" id="2_f6xsi"]
 [ext_resource type="Texture2D" uid="uid://b5qu8ics07up3" path="res://Assets/Chapter 1/initial-alley/Dorian_3qrtr_close_confused.png" id="3_ey63g"]
 [ext_resource type="Texture2D" uid="uid://1cq7arrcntf0" path="res://Assets/Chapter 1/initial-alley/Dorian_3qrtr_close_phonehand.png" id="4_rk45k"]
 [ext_resource type="Texture2D" uid="uid://y5j0g1se5stw" path="res://Assets/Chapter 1/initial-alley/Marbury and 3rd sign.png" id="5_8wlly"]
 [ext_resource type="Texture2D" uid="uid://c2vngb7uq2uhw" path="res://Assets/Chapter 1/initial-alley/Phone_marie.png" id="6_fmysh"]
 [ext_resource type="PackedScene" uid="uid://d4cbyalgs01x8" path="res://Assets/Dialogue/dialogue_box.tscn" id="7_33j4g"]
+[ext_resource type="PackedScene" uid="uid://dlqm5dgeomybm" path="res://Assets/Dialogue/button.tscn" id="9_ursd0"]
 
 [sub_resource type="Animation" id="Animation_wrvmk"]
 resource_name = "Scene 1"
@@ -79,11 +81,23 @@ resource_name = "Panel 3"
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("Panel 3:modulate")
+tracks/0/path = NodePath("Panel 3/BlackScreen3:modulate")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0, 1),
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Panel 3/Dialogue3:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.6),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
 "values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
@@ -589,79 +603,79 @@ tracks/4/keys = {
 tracks/5/type = "value"
 tracks/5/imported = false
 tracks/5/enabled = true
-tracks/5/path = NodePath("Panel 3:modulate")
+tracks/5/path = NodePath("Panel 4/MariePhone4:position")
 tracks/5/interp = 1
 tracks/5/loop_wrap = true
 tracks/5/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [Color(1, 1, 1, 0)]
+"values": [Vector2(-392, 344)]
 }
 tracks/6/type = "value"
 tracks/6/imported = false
 tracks/6/enabled = true
-tracks/6/path = NodePath("Panel 4/MariePhone4:position")
+tracks/6/path = NodePath("Panel 4/Dialogue4b:position")
 tracks/6/interp = 1
 tracks/6/loop_wrap = true
 tracks/6/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [Vector2(-392, 344)]
+"values": [Vector2(-712, 648)]
 }
 tracks/7/type = "value"
 tracks/7/imported = false
 tracks/7/enabled = true
-tracks/7/path = NodePath("Panel 4/Dialogue4b:position")
+tracks/7/path = NodePath("Panel 4/Dialogue4c:position")
 tracks/7/interp = 1
 tracks/7/loop_wrap = true
 tracks/7/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [Vector2(-712, 648)]
+"values": [Vector2(2464, 200)]
 }
 tracks/8/type = "value"
 tracks/8/imported = false
 tracks/8/enabled = true
-tracks/8/path = NodePath("Panel 4/Dialogue4c:position")
+tracks/8/path = NodePath("Panel 4/Dialogue4d:position")
 tracks/8/interp = 1
 tracks/8/loop_wrap = true
 tracks/8/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [Vector2(2464, 200)]
+"values": [Vector2(440, 1224)]
 }
 tracks/9/type = "value"
 tracks/9/imported = false
 tracks/9/enabled = true
-tracks/9/path = NodePath("Panel 4/Dialogue4d:position")
+tracks/9/path = NodePath("Panel 4/Dialogue4a:position")
 tracks/9/interp = 1
 tracks/9/loop_wrap = true
 tracks/9/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [Vector2(440, 1224)]
+"values": [Vector2(520, 288)]
 }
 tracks/10/type = "value"
 tracks/10/imported = false
 tracks/10/enabled = true
-tracks/10/path = NodePath("Panel 4/Dialogue4a:position")
+tracks/10/path = NodePath("Panel 5/DoreanBlank5:modulate")
 tracks/10/interp = 1
 tracks/10/loop_wrap = true
 tracks/10/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [Vector2(520, 288)]
+"values": [Color(1, 1, 1, 0)]
 }
 tracks/11/type = "value"
 tracks/11/imported = false
 tracks/11/enabled = true
-tracks/11/path = NodePath("Panel 5/DoreanBlank5:modulate")
+tracks/11/path = NodePath("Panel 5/Dialogue5a:modulate")
 tracks/11/interp = 1
 tracks/11/loop_wrap = true
 tracks/11/keys = {
@@ -673,139 +687,139 @@ tracks/11/keys = {
 tracks/12/type = "value"
 tracks/12/imported = false
 tracks/12/enabled = true
-tracks/12/path = NodePath("Panel 5/Dialogue5a:modulate")
+tracks/12/path = NodePath("Panel 5/Dialogue5b:position")
 tracks/12/interp = 1
 tracks/12/loop_wrap = true
 tracks/12/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [Color(1, 1, 1, 0)]
+"values": [Vector2(1624, 1232)]
 }
 tracks/13/type = "value"
 tracks/13/imported = false
 tracks/13/enabled = true
-tracks/13/path = NodePath("Panel 5/Dialogue5b:position")
+tracks/13/path = NodePath("Panel 5/Dialogue5b:modulate")
 tracks/13/interp = 1
 tracks/13/loop_wrap = true
 tracks/13/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [Vector2(1624, 1232)]
+"values": [Color(1, 1, 1, 0)]
 }
 tracks/14/type = "value"
 tracks/14/imported = false
 tracks/14/enabled = true
-tracks/14/path = NodePath("Panel 5/Dialogue5b:modulate")
+tracks/14/path = NodePath("Panel 6/StreetSign6:position")
 tracks/14/interp = 1
 tracks/14/loop_wrap = true
 tracks/14/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [Color(1, 1, 1, 0)]
+"values": [Vector2(0, 0)]
 }
 tracks/15/type = "value"
 tracks/15/imported = false
 tracks/15/enabled = true
-tracks/15/path = NodePath("Panel 6/StreetSign6:position")
+tracks/15/path = NodePath("Panel 6/StreetSign6:scale")
 tracks/15/interp = 1
 tracks/15/loop_wrap = true
 tracks/15/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [Vector2(0, 0)]
+"values": [Vector2(1, 1)]
 }
 tracks/16/type = "value"
 tracks/16/imported = false
 tracks/16/enabled = true
-tracks/16/path = NodePath("Panel 6/StreetSign6:scale")
+tracks/16/path = NodePath("Panel 6/Dialogue6:position")
 tracks/16/interp = 1
 tracks/16/loop_wrap = true
 tracks/16/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [Vector2(1, 1)]
+"values": [Vector2(600, -208)]
 }
 tracks/17/type = "value"
 tracks/17/imported = false
 tracks/17/enabled = true
-tracks/17/path = NodePath("Panel 6/Dialogue6:position")
+tracks/17/path = NodePath("Panel 7/DoreanPhoneHand7:position")
 tracks/17/interp = 1
 tracks/17/loop_wrap = true
 tracks/17/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [Vector2(600, -208)]
+"values": [Vector2(-3056, -1640)]
 }
 tracks/18/type = "value"
 tracks/18/imported = false
 tracks/18/enabled = true
-tracks/18/path = NodePath("Panel 7/DoreanPhoneHand7:position")
+tracks/18/path = NodePath("Panel 7/Dialogue7:position")
 tracks/18/interp = 1
 tracks/18/loop_wrap = true
 tracks/18/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [Vector2(-3056, -1640)]
+"values": [Vector2(1456, 1224)]
 }
 tracks/19/type = "value"
 tracks/19/imported = false
 tracks/19/enabled = true
-tracks/19/path = NodePath("Panel 7/Dialogue7:position")
+tracks/19/path = NodePath("Panel 8/BlackScreen8:modulate")
 tracks/19/interp = 1
 tracks/19/loop_wrap = true
 tracks/19/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [Vector2(1456, 1224)]
+"values": [Color(1, 1, 1, 0)]
 }
 tracks/20/type = "value"
 tracks/20/imported = false
 tracks/20/enabled = true
-tracks/20/path = NodePath("Panel 8/BlackScreen8:modulate")
+tracks/20/path = NodePath("Panel 8/Dialogue8:position")
 tracks/20/interp = 1
 tracks/20/loop_wrap = true
 tracks/20/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [Color(1, 1, 1, 0)]
+"values": [Vector2(1472, 1016)]
 }
 tracks/21/type = "value"
 tracks/21/imported = false
 tracks/21/enabled = true
-tracks/21/path = NodePath("Panel 8/Dialogue8:position")
+tracks/21/path = NodePath("Panel 4/Dialogue4a:modulate")
 tracks/21/interp = 1
 tracks/21/loop_wrap = true
 tracks/21/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [Vector2(1472, 1016)]
+"values": [Color(1, 1, 1, 1)]
 }
 tracks/22/type = "value"
 tracks/22/imported = false
 tracks/22/enabled = true
-tracks/22/path = NodePath("Panel 4/Dialogue4a:modulate")
+tracks/22/path = NodePath("Panel 4/Dialogue4b:modulate")
 tracks/22/interp = 1
 tracks/22/loop_wrap = true
 tracks/22/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [Color(1, 1, 1, 1)]
+"values": [Color(1, 1, 1, 0)]
 }
 tracks/23/type = "value"
 tracks/23/imported = false
 tracks/23/enabled = true
-tracks/23/path = NodePath("Panel 4/Dialogue4b:modulate")
+tracks/23/path = NodePath("Panel 4/Dialogue4c:modulate")
 tracks/23/interp = 1
 tracks/23/loop_wrap = true
 tracks/23/keys = {
@@ -817,7 +831,7 @@ tracks/23/keys = {
 tracks/24/type = "value"
 tracks/24/imported = false
 tracks/24/enabled = true
-tracks/24/path = NodePath("Panel 4/Dialogue4c:modulate")
+tracks/24/path = NodePath("Panel 4/Dialogue4d:modulate")
 tracks/24/interp = 1
 tracks/24/loop_wrap = true
 tracks/24/keys = {
@@ -829,14 +843,26 @@ tracks/24/keys = {
 tracks/25/type = "value"
 tracks/25/imported = false
 tracks/25/enabled = true
-tracks/25/path = NodePath("Panel 4/Dialogue4d:modulate")
+tracks/25/path = NodePath("Panel 3/BlackScreen3:modulate")
 tracks/25/interp = 1
 tracks/25/loop_wrap = true
 tracks/25/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [Color(1, 1, 1, 0)]
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/26/type = "value"
+tracks/26/imported = false
+tracks/26/enabled = true
+tracks/26/path = NodePath("Panel 3/Dialogue3:modulate")
+tracks/26/interp = 1
+tracks/26/loop_wrap = true
+tracks/26/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_duj7y"]
@@ -858,11 +884,6 @@ _data = {
 [node name="Initial-alley" type="Node2D"]
 script = ExtResource("1_kd3uj")
 
-[node name="temp bg" type="ColorRect" parent="."]
-offset_right = 1920.0
-offset_bottom = 1080.0
-metadata/_edit_use_anchors_ = true
-
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {
 "": SubResource("AnimationLibrary_duj7y")
@@ -870,6 +891,12 @@ libraries = {
 
 [node name="Panel 1" type="Node2D" parent="."]
 visible = false
+
+[node name="BG" type="Sprite2D" parent="Panel 1"]
+position = Vector2(1034, 515)
+scale = Vector2(0.573611, 0.573611)
+texture = ExtResource("2_cyom3")
+metadata/_edit_use_anchors_ = true
 
 [node name="MariePhone1" type="Sprite2D" parent="Panel 1"]
 position = Vector2(152, 0)
@@ -889,6 +916,11 @@ Just come home, Dorian. This is too much, even for you. I know he screwed you ov
 
 [node name="Panel 2" type="Node2D" parent="."]
 visible = false
+
+[node name="BG" type="Sprite2D" parent="Panel 2"]
+position = Vector2(0, 1065)
+texture = ExtResource("2_cyom3")
+metadata/_edit_use_anchors_ = true
 
 [node name="DoreanHand2" type="Sprite2D" parent="Panel 2"]
 position = Vector2(704, 362.856)
@@ -914,7 +946,11 @@ Marie. Slow down. I didn't kill anybody for God's sake."
 
 [node name="Panel 3" type="Node2D" parent="."]
 visible = false
-modulate = Color(1, 1, 1, 0)
+
+[node name="BG" type="Sprite2D" parent="Panel 3"]
+visible = false
+texture = ExtResource("2_cyom3")
+metadata/_edit_use_anchors_ = true
 
 [node name="BlackScreen3" type="ColorRect" parent="Panel 3"]
 offset_right = 1920.0
@@ -933,6 +969,13 @@ theme_override_font_sizes/normal_font_size = 80
 text = "Did I?"
 
 [node name="Panel 4" type="Node2D" parent="."]
+visible = false
+
+[node name="BG" type="Sprite2D" parent="Panel 4"]
+position = Vector2(853, 564)
+scale = Vector2(0.554167, 0.554167)
+texture = ExtResource("2_cyom3")
+metadata/_edit_use_anchors_ = true
 
 [node name="MariePhone4" type="Sprite2D" parent="Panel 4"]
 position = Vector2(-392, 344)
@@ -991,6 +1034,10 @@ Where are you, Dorian? What did you do? What did you--"
 [node name="Panel 5" type="Node2D" parent="."]
 visible = false
 
+[node name="BG" type="Sprite2D" parent="Panel 5"]
+texture = ExtResource("2_cyom3")
+metadata/_edit_use_anchors_ = true
+
 [node name="DoreanBlank5" type="Sprite2D" parent="Panel 5"]
 modulate = Color(1, 1, 1, 0)
 texture = ExtResource("2_f6xsi")
@@ -1023,6 +1070,12 @@ Damn it! Where am I?"
 [node name="Panel 6" type="Node2D" parent="."]
 visible = false
 
+[node name="BG" type="Sprite2D" parent="Panel 6"]
+position = Vector2(1457, 321)
+scale = Vector2(0.813918, 0.813918)
+texture = ExtResource("2_cyom3")
+metadata/_edit_use_anchors_ = true
+
 [node name="StreetSign6" type="Sprite2D" parent="Panel 6"]
 texture = ExtResource("5_8wlly")
 centered = false
@@ -1040,6 +1093,11 @@ Marbury and 3rd, seems like. Christ. I need to stop drinking."
 
 [node name="Panel 7" type="Node2D" parent="."]
 visible = false
+
+[node name="BG" type="Sprite2D" parent="Panel 7"]
+position = Vector2(72, 372)
+texture = ExtResource("2_cyom3")
+metadata/_edit_use_anchors_ = true
 
 [node name="DoreanPhoneHand7" type="Sprite2D" parent="Panel 7"]
 position = Vector2(-3056, -1640)
@@ -1061,6 +1119,10 @@ And what have I done? Is that blood..."
 [node name="Panel 8" type="Node2D" parent="."]
 visible = false
 
+[node name="BG" type="Sprite2D" parent="Panel 8"]
+texture = ExtResource("2_cyom3")
+metadata/_edit_use_anchors_ = true
+
 [node name="BlackScreen8" type="ColorRect" parent="Panel 8"]
 modulate = Color(1, 1, 1, 0)
 offset_right = 1920.0
@@ -1077,3 +1139,26 @@ offset_right = -64.0
 offset_bottom = 360.0
 theme_override_font_sizes/normal_font_size = 50
 text = "Murder? After the year I've had, I ... wouldn't put it past myself."
+
+[node name="Panel 9" type="Node2D" parent="."]
+visible = false
+
+[node name="BG" type="Sprite2D" parent="Panel 9"]
+position = Vector2(789, 638)
+scale = Vector2(0.725, 0.725)
+texture = ExtResource("2_cyom3")
+metadata/_edit_use_anchors_ = true
+
+[node name="WhoHaveIKilled" parent="Panel 9" instance=ExtResource("9_ursd0")]
+offset_left = 716.0
+offset_top = 390.0
+offset_right = 1118.0
+offset_bottom = 493.0
+text = "Who have I killed?"
+
+[node name="WhyamIatMarbury" parent="Panel 9" instance=ExtResource("9_ursd0")]
+offset_left = 631.0
+offset_top = 556.0
+offset_right = 1208.0
+offset_bottom = 648.0
+text = "Why am I at Marbury and 3rd?"

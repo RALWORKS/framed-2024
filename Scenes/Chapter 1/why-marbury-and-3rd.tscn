@@ -1,61 +1,8 @@
-[gd_scene load_steps=8 format=3 uid="uid://467h3yxh0kcl"]
+[gd_scene load_steps=7 format=3 uid="uid://cmm7um2anfrlt"]
 
 [ext_resource type="Texture2D" uid="uid://28408hfurn7x" path="res://Assets/Chapter 1/Initial_alley_no background.png" id="1_p4awe"]
 [ext_resource type="Texture2D" uid="uid://c0gku3v6g0tgk" path="res://Assets/Chapter 1/Dorian_3qrtr_full.png" id="2_2svbf"]
 [ext_resource type="Texture2D" uid="uid://y5j0g1se5stw" path="res://Assets/Chapter 1/initial-alley/Marbury and 3rd sign.png" id="3_mcdjq"]
-
-[sub_resource type="GDScript" id="GDScript_x1b4a"]
-script/source = "extends Node2D
-
-
-# Called when the node enters the scene tree for the first time.
-func _ready():
-	pass # Replace with function body.
-
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
-	pass
-"
-
-[sub_resource type="Animation" id="Animation_vse5k"]
-resource_name = "Zoom Out"
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("BG:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 1),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Vector2(368, 840), Vector2(1220.44, 680)]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("Sign:position")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0, 1),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Vector2(944, 592), Vector2(1796.44, 432)]
-}
-tracks/2/type = "value"
-tracks/2/imported = false
-tracks/2/enabled = true
-tracks/2/path = NodePath("MC:position")
-tracks/2/interp = 1
-tracks/2/loop_wrap = true
-tracks/2/keys = {
-"times": PackedFloat32Array(0, 1),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Vector2(-704, 1304), Vector2(148.445, 1144)]
-}
 
 [sub_resource type="Animation" id="Animation_gthll"]
 length = 0.001
@@ -96,6 +43,45 @@ tracks/2/keys = {
 "values": [Vector2(-704, 1304)]
 }
 
+[sub_resource type="Animation" id="Animation_vse5k"]
+resource_name = "Zoom Out"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("BG:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(368, 840), Vector2(1220.44, 680)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Sign:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(944, 592), Vector2(1796.44, 432)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("MC:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(-704, 1304), Vector2(148.445, 1144)]
+}
+
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_7kfjv"]
 _data = {
 "RESET": SubResource("Animation_gthll"),
@@ -103,7 +89,6 @@ _data = {
 }
 
 [node name="why-marbury-and-3rd" type="Node2D"]
-script = SubResource("GDScript_x1b4a")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {
