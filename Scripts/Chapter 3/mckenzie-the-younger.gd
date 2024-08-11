@@ -8,6 +8,7 @@ var HORROR = "HORROR"
 var HEART = "HEART"
 var CALM = "CALM"
 var END = "END"
+var GAMEOVER = "GAMEOVER"
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -49,7 +50,7 @@ func _ready():
 		["11a", $"11", END, HORROR],
 		[null, $"28"],
 		[null, $"29", HORROR],
-		["30a", $"30", END]
+		["30a", $"30", GAMEOVER]
 	]
 	play()
 	
@@ -67,6 +68,9 @@ func goto(to_index):
 	play()
 
 func next():
+	if GAMEOVER in sequence[index]:
+		gameover()
+		return
 	if END in sequence[index]:
 		end()
 		return
@@ -99,6 +103,10 @@ func flip(to):
 	to.visible = true
 
 func end():
+	# TODO
+	pass
+	
+func gameover():
 	# TODO
 	pass
 
