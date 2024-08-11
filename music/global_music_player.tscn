@@ -1,0 +1,115 @@
+[gd_scene load_steps=9 format=3 uid="uid://14ru2dda6tu6"]
+
+[ext_resource type="AudioStream" uid="uid://decmjeuaty38n" path="res://music/heart.ogg" id="1_a71he"]
+[ext_resource type="Script" path="res://music/global_music_player.gd" id="1_ja5of"]
+[ext_resource type="AudioStream" uid="uid://bdig8p3vblfhc" path="res://music/horror.ogg" id="2_au0ji"]
+[ext_resource type="AudioStream" uid="uid://bcedmh7tch5kp" path="res://music/calm.ogg" id="3_rq6b3"]
+
+[sub_resource type="Animation" id="Animation_f4q4p"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:volume_db")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [-80.0]
+}
+
+[sub_resource type="Animation" id="Animation_mfyre"]
+resource_name = "off"
+length = 1.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:volume_db")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5, 1.5),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [0.0, 0.0, -60.0]
+}
+
+[sub_resource type="Animation" id="Animation_0p7hl"]
+resource_name = "on"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:volume_db")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [-60.0, 0.0]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_vswqd"]
+_data = {
+"RESET": SubResource("Animation_f4q4p"),
+"off": SubResource("Animation_mfyre"),
+"on": SubResource("Animation_0p7hl")
+}
+
+[node name="GlobalMusicPlayer" type="Node"]
+script = ExtResource("1_ja5of")
+
+[node name="Heart" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("1_a71he")
+volume_db = -80.0
+autoplay = true
+
+[node name="Fader" type="AnimationPlayer" parent="Heart"]
+libraries = {
+"": SubResource("AnimationLibrary_vswqd")
+}
+
+[node name="Horror" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("2_au0ji")
+volume_db = -80.0
+autoplay = true
+
+[node name="Fader" type="AnimationPlayer" parent="Horror"]
+libraries = {
+"": SubResource("AnimationLibrary_vswqd")
+}
+
+[node name="Calm" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_rq6b3")
+volume_db = -80.0
+autoplay = true
+
+[node name="Fader" type="AnimationPlayer" parent="Calm"]
+libraries = {
+"": SubResource("AnimationLibrary_vswqd")
+}
+
+[node name="DemoUI" type="Node2D" parent="."]
+
+[node name="Heart" type="Button" parent="DemoUI"]
+offset_left = 96.0
+offset_top = 73.0
+offset_right = 302.0
+offset_bottom = 153.0
+text = "Heart"
+
+[node name="Calm" type="Button" parent="DemoUI"]
+offset_left = 96.0
+offset_top = 167.0
+offset_right = 302.0
+offset_bottom = 247.0
+text = "Calm"
+
+[node name="Horror" type="Button" parent="DemoUI"]
+offset_left = 96.0
+offset_top = 262.0
+offset_right = 302.0
+offset_bottom = 342.0
+text = "Horror"
