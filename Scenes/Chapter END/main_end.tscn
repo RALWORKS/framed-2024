@@ -8,7 +8,7 @@
 [ext_resource type="PackedScene" uid="uid://dlqm5dgeomybm" path="res://Assets/Dialogue/button.tscn" id="6_7w5y3"]
 [ext_resource type="Texture2D" uid="uid://c08bvriqe0xji" path="res://Assets/Dorian_3qrtr_close_confused.png" id="6_mfvfo"]
 [ext_resource type="Texture2D" uid="uid://1cq7arrcntf0" path="res://Assets/Chapter 1/initial-alley/Dorian_3qrtr_close_phonehand.png" id="8_tsdf1"]
-[ext_resource type="Texture2D" uid="uid://dat04fabcetcd" path="res://Assets/Dorian_hand_for_chin.png" id="9_gjqud"]
+[ext_resource type="Texture2D" uid="uid://cw6bebstra74y" path="res://Assets/Dorian_hand_for_chin.png" id="9_gjqud"]
 [ext_resource type="Texture2D" uid="uid://c0gku3v6g0tgk" path="res://Assets/Chapter 1/Dorian_3qrtr_full.png" id="10_hxt8s"]
 [ext_resource type="PackedScene" uid="uid://citwqd4hfhtll" path="res://Assets/UI/puzzle_animation.tscn" id="11_lndx2"]
 [ext_resource type="Texture2D" uid="uid://bnh2gv2ks704b" path="res://Assets/Officer_profile_full_silhouette.png" id="12_al3vl"]

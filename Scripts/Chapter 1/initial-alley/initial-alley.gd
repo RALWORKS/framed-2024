@@ -40,10 +40,10 @@ func _ready():
 	["Panel 16b", null],
 	["Panel 16c", null],
 	["Panel 16d", null],
-	["Panel 17", $"Panel 17", TRANSITION, END],
+	["Panel 17", $"Panel 17", TRANSITION, END, HORROR],
 	["Panel 18", $"Panel 18", TRANSITION], # 23
 	["Panel 19", $"Panel 19", TRANSITION],
-	["Panel 17", $"Panel 17", TRANSITION, END]
+	["Panel 17", $"Panel 17", TRANSITION, END, HORROR]
 	]
 	play()
 	
