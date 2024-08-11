@@ -92,6 +92,7 @@ libraries = {
 }
 
 [node name="DemoUI" type="Node2D" parent="."]
+visible = false
 
 [node name="Heart" type="Button" parent="DemoUI"]
 offset_left = 96.0
