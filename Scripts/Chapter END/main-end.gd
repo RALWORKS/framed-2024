@@ -19,38 +19,8 @@ func _ready():
 	#anim_play.play("Panel 1")
 	
 	sequence = [
-		["1a", $"1"],
-		[null, $"2", OPTIONS],
-		["3a", $"3"],
-		[null, $"4", OPTIONS],
-		["5a", $"5"],
-		[null, $"6"],
-		["7a", $"7"],
-		[null, $"8", OPTIONS],
-		["9a", $"9", HORROR],
-		["10a", $"10"],
-		["11a", $"11", END],
-		[null, $"12"],
-		[null, $"13"],
-		[null, $"14"],
-		[null, $"15"],
-		[null, $"16"],
-		[null, $"17"],
-		["18a", $"18"],
-		["11a", $"11", END, HORROR],
-		[null, $"19"],
-		[null, $"20"],
-		[null, $"21"],
-		[null, $"22"],
-		[null, $"23"],
-		[null, $"24", OPTIONS],
-		[null, $"25"],
-		[null, $"26"],
-		["27a", $"27"],
-		["11a", $"11", END, HORROR],
-		[null, $"28"],
-		[null, $"29", HORROR],
-		["30a", $"30", GAMEOVER]
+		# Node2D["1a", $"1"],
+		["1a", $"1", END],
 	]
 	play()
 	
@@ -103,9 +73,8 @@ func flip(to):
 	to.visible = true
 
 func end():
-	Transition.transition()
-	await Transition.on_transition_finished
-	get_tree().change_scene_to_file("res://Scenes/Chapter END/main_end.tscn")
+	# TODO
+	pass
 	
 func gameover():
 	# TODO
