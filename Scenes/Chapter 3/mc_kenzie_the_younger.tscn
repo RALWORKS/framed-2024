@@ -1,0 +1,563 @@
+[gd_scene load_steps=13 format=3 uid="uid://byyy1gvkr02b0"]
+
+[ext_resource type="Script" path="res://Scripts/Chapter 3/mckenzie-the-younger.gd" id="1_qnkf3"]
+[ext_resource type="Texture2D" uid="uid://bw0n5w5nx5and" path="res://Assets/Initial_alley_01.png" id="2_2agux"]
+[ext_resource type="Texture2D" uid="uid://c0gku3v6g0tgk" path="res://Assets/Chapter 1/Dorian_3qrtr_full.png" id="3_3m0rl"]
+[ext_resource type="Texture2D" uid="uid://myytfjg1xt5p" path="res://Assets/HomelessMcKenzie_sitting.png" id="4_uls6k"]
+[ext_resource type="PackedScene" uid="uid://d4cbyalgs01x8" path="res://Assets/Dialogue/dialogue_box.tscn" id="5_c5ymi"]
+[ext_resource type="PackedScene" uid="uid://dlqm5dgeomybm" path="res://Assets/Dialogue/button.tscn" id="6_eohac"]
+
+[sub_resource type="Animation" id="Animation_cs7na"]
+resource_name = "1a"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("1/dorian:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.4, 0.6, 0.8, 1),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [Vector2(642, 971), Vector2(714, 1000), Vector2(786, 971), Vector2(858, 1000), Vector2(930, 971), Vector2(1002, 1000)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("1/bg:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1092, 625), Vector2(668, 625)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("1/Dialogue Box:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0.8, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1952, 458), Vector2(1436, 458)]
+}
+
+[sub_resource type="Animation" id="Animation_7t7q2"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("1/dorian:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(642, 971)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("1/bg:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1092, 625)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("1/Dialogue Box:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1436, 458)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("3/1:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(875, 312)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("3/1/2:modulate")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("5/Dialogue Box:modulate")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("5/Dialogue Box2:modulate")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("5/Dialogue Box3:modulate")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("5/Dialogue Box4:modulate")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/9/type = "value"
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/path = NodePath("7/Dialogue:modulate")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/10/type = "value"
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/path = NodePath("7/Dialogue2:modulate")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_rqpad"]
+resource_name = "3a"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("3/1:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1939, 312), Vector2(875, 312)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("3/1/2:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.5, 1),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_ov6yx"]
+resource_name = "5a"
+length = 2.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("5/Dialogue Box:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("5/Dialogue Box2:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.3),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("5/Dialogue Box3:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.9, 1.1),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("5/Dialogue Box4:modulate")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 1.1, 1.3),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_1wqx1"]
+resource_name = "7a"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("7/Dialogue:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("7/Dialogue2:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.5, 0.8),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_n4xwd"]
+_data = {
+"1a": SubResource("Animation_cs7na"),
+"3a": SubResource("Animation_rqpad"),
+"5a": SubResource("Animation_ov6yx"),
+"7a": SubResource("Animation_1wqx1"),
+"RESET": SubResource("Animation_7t7q2")
+}
+
+[node name="McKenzieTheYounger" type="Node2D"]
+script = ExtResource("1_qnkf3")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+deterministic = true
+reset_on_save = false
+libraries = {
+"": SubResource("AnimationLibrary_n4xwd")
+}
+
+[node name="1" type="Node2D" parent="."]
+
+[node name="bg" type="Sprite2D" parent="1"]
+position = Vector2(1092, 625)
+texture = ExtResource("2_2agux")
+
+[node name="man" type="Sprite2D" parent="1/bg"]
+position = Vector2(1176, 314)
+scale = Vector2(0.7, 0.7)
+texture = ExtResource("4_uls6k")
+flip_h = true
+
+[node name="dorian" type="Sprite2D" parent="1"]
+position = Vector2(642, 971)
+rotation = 0.120428
+texture = ExtResource("3_3m0rl")
+
+[node name="Dialogue Box" parent="1" instance=ExtResource("5_c5ymi")]
+offset_left = 1952.0
+offset_top = 458.0
+offset_right = 2288.0
+offset_bottom = 642.0
+text = "HOMELESS MAN:
+
+Hey! Hey buddy!"
+
+[node name="2" type="Node2D" parent="."]
+
+[node name="bg" type="Sprite2D" parent="2"]
+position = Vector2(261, 424)
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("2_2agux")
+
+[node name="man" type="Sprite2D" parent="2/bg"]
+position = Vector2(1176, 314)
+scale = Vector2(0.7, 0.7)
+texture = ExtResource("4_uls6k")
+flip_h = true
+
+[node name="dorian" type="Sprite2D" parent="2"]
+position = Vector2(436, 799)
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("3_3m0rl")
+
+[node name="Hi" parent="2" instance=ExtResource("6_eohac")]
+offset_left = 814.0
+offset_top = 170.0
+offset_right = 1510.0
+offset_bottom = 234.0
+text = "\"Uh ... hey. Do you know me too?\""
+to_index = 2
+
+[node name="Ignore" parent="2" instance=ExtResource("6_eohac")]
+offset_left = 814.0
+offset_top = 260.0
+offset_right = 1510.0
+offset_bottom = 324.0
+text = "[Ignore him]"
+to_index = 4
+
+[node name="3" type="Node2D" parent="."]
+
+[node name="bg" type="Sprite2D" parent="3"]
+position = Vector2(261, 424)
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("2_2agux")
+
+[node name="man" type="Sprite2D" parent="3/bg"]
+position = Vector2(1176, 314)
+scale = Vector2(0.7, 0.7)
+texture = ExtResource("4_uls6k")
+flip_h = true
+
+[node name="dorian" type="Sprite2D" parent="3/bg"]
+position = Vector2(116.667, 250)
+texture = ExtResource("3_3m0rl")
+
+[node name="1" parent="3" instance=ExtResource("5_c5ymi")]
+offset_left = 1939.0
+offset_top = 312.0
+offset_right = 2730.0
+offset_bottom = 515.0
+text = "HOMELESS MAN:
+'Course. "
+
+[node name="2" parent="3/1" instance=ExtResource("5_c5ymi")]
+modulate = Color(1, 1, 1, 0)
+offset_right = 791.0
+offset_bottom = 203.0
+text = "HOMELESS MAN:
+'Course. You were in pretty rough shape last night. Don't know what they  gave you, but you were out of it."
+
+[node name="4" type="Node2D" parent="."]
+
+[node name="bg" type="Sprite2D" parent="4"]
+position = Vector2(261, 424)
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("2_2agux")
+
+[node name="man" type="Sprite2D" parent="4/bg"]
+position = Vector2(1176, 314)
+scale = Vector2(0.7, 0.7)
+texture = ExtResource("4_uls6k")
+flip_h = true
+
+[node name="dorian" type="Sprite2D" parent="4"]
+position = Vector2(436, 799)
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("3_3m0rl")
+
+[node name="Who?" parent="4" instance=ExtResource("6_eohac")]
+offset_left = 814.0
+offset_top = 170.0
+offset_right = 1510.0
+offset_bottom = 234.0
+text = "\"Who's they?\""
+
+[node name="What?" parent="4" instance=ExtResource("6_eohac")]
+offset_left = 814.0
+offset_top = 260.0
+offset_right = 1510.0
+offset_bottom = 324.0
+text = "\"What happened?\""
+
+[node name="5" type="Node2D" parent="."]
+
+[node name="bg" type="Sprite2D" parent="5"]
+position = Vector2(-550, 267)
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("2_2agux")
+
+[node name="man" type="Sprite2D" parent="5/bg"]
+position = Vector2(1176, 314)
+scale = Vector2(0.7, 0.7)
+texture = ExtResource("4_uls6k")
+flip_h = true
+
+[node name="Dialogue Box" parent="5" instance=ExtResource("5_c5ymi")]
+offset_left = 282.0
+offset_top = 215.0
+offset_right = 599.0
+offset_bottom = 392.0
+theme_override_font_sizes/normal_font_size = 100
+text = "Hey, "
+
+[node name="Dialogue Box2" parent="5" instance=ExtResource("5_c5ymi")]
+offset_left = 437.0
+offset_top = 419.0
+offset_right = 744.0
+offset_bottom = 596.0
+theme_override_font_sizes/normal_font_size = 100
+text = "you!"
+
+[node name="Dialogue Box3" parent="5" instance=ExtResource("5_c5ymi")]
+offset_left = 1020.0
+offset_top = 746.0
+offset_right = 1579.0
+offset_bottom = 841.0
+text = "You still got blood on you."
+
+[node name="Dialogue Box4" parent="5" instance=ExtResource("5_c5ymi")]
+offset_left = 792.0
+offset_top = 892.0
+offset_right = 1321.0
+offset_bottom = 1023.0
+text = "Didn't I say to wash your hands? You missed a spot!"
+
+[node name="6" type="Node2D" parent="."]
+
+[node name="bg" type="Sprite2D" parent="6"]
+position = Vector2(301, 426)
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("2_2agux")
+
+[node name="dorian" type="Sprite2D" parent="6"]
+position = Vector2(451, 873)
+scale = Vector2(2, 2)
+texture = ExtResource("3_3m0rl")
+
+[node name="Dialogue Box4" parent="6" instance=ExtResource("5_c5ymi")]
+offset_left = 949.0
+offset_top = 354.0
+offset_right = 1421.0
+offset_bottom = 470.0
+text = "..."
+
+[node name="7" type="Node2D" parent="."]
+
+[node name="bg" type="Sprite2D" parent="7"]
+position = Vector2(261, 424)
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("2_2agux")
+
+[node name="man" type="Sprite2D" parent="7/bg"]
+position = Vector2(1176, 314)
+scale = Vector2(0.7, 0.7)
+texture = ExtResource("4_uls6k")
+flip_h = true
+
+[node name="dorian" type="Sprite2D" parent="7"]
+position = Vector2(436, 799)
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("3_3m0rl")
+
+[node name="Dialogue" parent="7" instance=ExtResource("5_c5ymi")]
+modulate = Color(1, 1, 1, 0)
+offset_left = 835.0
+offset_top = 197.0
+offset_right = 1307.0
+offset_bottom = 400.0
+text = "DORIAN:
+
+You were there last night?"
+
+[node name="Dialogue2" parent="7" instance=ExtResource("5_c5ymi")]
+modulate = Color(1, 1, 1, 0)
+offset_left = 1134.0
+offset_top = 430.0
+offset_right = 1506.0
+offset_bottom = 595.0
+text = "HOMELESS MAN:
+
+Yeah."
+
+[node name="8" type="Node2D" parent="."]
+
+[node name="bg" type="Sprite2D" parent="8"]
+position = Vector2(261, 424)
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("2_2agux")
+
+[node name="man" type="Sprite2D" parent="8/bg"]
+position = Vector2(1176, 314)
+scale = Vector2(0.7, 0.7)
+texture = ExtResource("4_uls6k")
+flip_h = true
+
+[node name="dorian" type="Sprite2D" parent="8"]
+position = Vector2(436, 799)
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("3_3m0rl")
+
+[node name="Who?" parent="8" instance=ExtResource("6_eohac")]
+offset_left = 814.0
+offset_top = 170.0
+offset_right = 1510.0
+offset_bottom = 234.0
+text = "[Kill him]"
+
+[node name="What?" parent="8" instance=ExtResource("6_eohac")]
+offset_left = 814.0
+offset_top = 260.0
+offset_right = 1510.0
+offset_bottom = 324.0
+text = "\"What did you see?\""
