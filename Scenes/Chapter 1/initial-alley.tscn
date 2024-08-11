@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://n3ps665svqra"]
+[gd_scene load_steps=21 format=3 uid="uid://n3ps665svqra"]
 
 [ext_resource type="Script" path="res://Scripts/Chapter 1/initial-alley/initial-alley.gd" id="1_kd3uj"]
 [ext_resource type="Texture2D" uid="uid://kk1umvxxppwt" path="res://Assets/Chapter 1/initial-alley/Dorian_3qrtr_close_blank.png" id="2_f6xsi"]
@@ -70,6 +70,534 @@ tracks/4/keys = {
 "update": 0,
 "values": [Vector2(2241, 207)]
 }
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Panel 3:modulate")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("Panel 4/MariePhone4:position")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-392, 344)]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("Panel 4/Dialogue4b:position")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-712, 648)]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("Panel 4/Dialogue4c:position")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(2464, 200)]
+}
+tracks/9/type = "value"
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/path = NodePath("Panel 4/Dialogue4d:position")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(440, 1224)]
+}
+tracks/10/type = "value"
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/path = NodePath("Panel 4/Dialogue4a:position")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(520, 288)]
+}
+tracks/11/type = "value"
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/path = NodePath("Panel 5/DoreanBlank5:modulate")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/12/type = "value"
+tracks/12/imported = false
+tracks/12/enabled = true
+tracks/12/path = NodePath("Panel 5/Dialogue5a:modulate")
+tracks/12/interp = 1
+tracks/12/loop_wrap = true
+tracks/12/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/13/type = "value"
+tracks/13/imported = false
+tracks/13/enabled = true
+tracks/13/path = NodePath("Panel 5/Dialogue5b:position")
+tracks/13/interp = 1
+tracks/13/loop_wrap = true
+tracks/13/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1624, 1232)]
+}
+tracks/14/type = "value"
+tracks/14/imported = false
+tracks/14/enabled = true
+tracks/14/path = NodePath("Panel 5/Dialogue5b:modulate")
+tracks/14/interp = 1
+tracks/14/loop_wrap = true
+tracks/14/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/15/type = "value"
+tracks/15/imported = false
+tracks/15/enabled = true
+tracks/15/path = NodePath("Panel 6/StreetSign6:position")
+tracks/15/interp = 1
+tracks/15/loop_wrap = true
+tracks/15/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0)]
+}
+tracks/16/type = "value"
+tracks/16/imported = false
+tracks/16/enabled = true
+tracks/16/path = NodePath("Panel 6/StreetSign6:scale")
+tracks/16/interp = 1
+tracks/16/loop_wrap = true
+tracks/16/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1)]
+}
+tracks/17/type = "value"
+tracks/17/imported = false
+tracks/17/enabled = true
+tracks/17/path = NodePath("Panel 6/Dialogue6:position")
+tracks/17/interp = 1
+tracks/17/loop_wrap = true
+tracks/17/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(600, -208)]
+}
+tracks/18/type = "value"
+tracks/18/imported = false
+tracks/18/enabled = true
+tracks/18/path = NodePath("Panel 7/DoreanPhoneHand7:position")
+tracks/18/interp = 1
+tracks/18/loop_wrap = true
+tracks/18/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-3056, -1640)]
+}
+tracks/19/type = "value"
+tracks/19/imported = false
+tracks/19/enabled = true
+tracks/19/path = NodePath("Panel 7/Dialogue7:position")
+tracks/19/interp = 1
+tracks/19/loop_wrap = true
+tracks/19/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1456, 1224)]
+}
+tracks/20/type = "value"
+tracks/20/imported = false
+tracks/20/enabled = true
+tracks/20/path = NodePath("Panel 8/BlackScreen8:modulate")
+tracks/20/interp = 1
+tracks/20/loop_wrap = true
+tracks/20/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/21/type = "value"
+tracks/21/imported = false
+tracks/21/enabled = true
+tracks/21/path = NodePath("Panel 8/Dialogue8:position")
+tracks/21/interp = 1
+tracks/21/loop_wrap = true
+tracks/21/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1472, 1016)]
+}
+
+[sub_resource type="Animation" id="Animation_m8tvq"]
+resource_name = "Panel 2"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Panel 2/DoreanConfused2:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(768, 2.85596), Vector2(-624, 2.85596)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Panel 2/DoreanHand2:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(704, 362.856), Vector2(-832, 976)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Panel 2/DoreanHand2:rotation")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [-0.241323, -0.581964]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Panel 2/Dialogue2:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0.5, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1456, 1224), Vector2(1456, 288)]
+}
+
+[sub_resource type="Animation" id="Animation_wrvmk"]
+resource_name = "Panel 1"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Panel 1/Dialogue1:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0.5, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(2241, 207), Vector2(360, 207)]
+}
+
+[sub_resource type="Animation" id="Animation_0i2cu"]
+resource_name = "Panel 3"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Panel 3:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_jks75"]
+resource_name = "Panel 4a"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Panel 4/MariePhone4:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(-2384, 344), Vector2(-392, 344)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Panel 4/Dialogue4a:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0.5, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(2536, 288), Vector2(520, 288)]
+}
+
+[sub_resource type="Animation" id="Animation_t12of"]
+resource_name = "Panel 4b"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Panel 4/MariePhone4:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(-392, 344), Vector2(-1368, 80)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Panel 4/Dialogue4b:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0.5, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(-712, 648), Vector2(1320, 648)]
+}
+
+[sub_resource type="Animation" id="Animation_b8cml"]
+resource_name = "Panel 4c"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Panel 4/MariePhone4:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(-1368, 80), Vector2(-464, -344)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Panel 4/Dialogue4c:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0.5, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(2464, 200), Vector2(488, 200)]
+}
+
+[sub_resource type="Animation" id="Animation_bol05"]
+resource_name = "Panel 4d"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Panel 4/Dialogue4d:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(440, 1224), Vector2(440, 424)]
+}
+
+[sub_resource type="Animation" id="Animation_oe6kb"]
+resource_name = "Panel 5"
+length = 2.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Panel 5/DoreanBlank5:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(1, 1.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Panel 5/Dialogue5a:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.6, 0.7),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Panel 5/Dialogue5b:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(1.5, 2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1624, 1272), Vector2(1624, 784)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Panel 5/Dialogue5b:modulate")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 1.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_cnvuu"]
+resource_name = "Panel 6"
+length = 2.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Panel 6/StreetSign6:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5, 1.3, 1.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(1265.78, 0), Vector2(0, 0), Vector2(0, 0), Vector2(592, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Panel 6/StreetSign6:scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.5, 2),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(0.340741, 0.340741), Vector2(1, 1), Vector2(1, 1)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Panel 6/Dialogue6:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(1.5, 2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(600, -208), Vector2(600, 560)]
+}
+
+[sub_resource type="Animation" id="Animation_cvj06"]
+resource_name = "Panel 7"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Panel 7/DoreanPhoneHand7:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(-904, -912), Vector2(-3056, -1640)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Panel 7/Dialogue7:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0.5, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1456, 1224), Vector2(2064, 488)]
+}
+
+[sub_resource type="Animation" id="Animation_7y20v"]
+resource_name = "Panel 8"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Panel 8/BlackScreen8:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Panel 8/Dialogue8:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0.4, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1472, 1016), Vector2(1472, 272)]
+}
 
 [sub_resource type="Animation" id="Animation_wrvmk"]
 resource_name = "Scene 1"
@@ -139,9 +667,18 @@ tracks/3/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_duj7y"]
 _data = {
-"RESET": SubResource("Animation_2rrm1"),
-"Scene 1": SubResource("Animation_wrvmk"),
-"Scene 2": SubResource("Animation_m8tvq")
+"Panel 1": SubResource("Animation_wrvmk"),
+"Panel 2": SubResource("Animation_m8tvq"),
+"Panel 3": SubResource("Animation_0i2cu"),
+"Panel 4a": SubResource("Animation_jks75"),
+"Panel 4b": SubResource("Animation_t12of"),
+"Panel 4c": SubResource("Animation_b8cml"),
+"Panel 4d": SubResource("Animation_bol05"),
+"Panel 5": SubResource("Animation_oe6kb"),
+"Panel 6": SubResource("Animation_cnvuu"),
+"Panel 7": SubResource("Animation_cvj06"),
+"Panel 8": SubResource("Animation_7y20v"),
+"RESET": SubResource("Animation_2rrm1")
 }
 
 [node name="Initial-alley" type="Node2D"]
@@ -156,28 +693,6 @@ metadata/_edit_use_anchors_ = true
 libraries = {
 "": SubResource("AnimationLibrary_duj7y")
 }
-
-[node name="DoreanPhoneHand" type="Sprite2D" parent="."]
-visible = false
-position = Vector2(-64, 360)
-rotation = -0.241323
-texture = ExtResource("4_rk45k")
-centered = false
-
-[node name="DoreanBlank" type="Sprite2D" parent="."]
-visible = false
-texture = ExtResource("2_f6xsi")
-centered = false
-
-[node name="DoreanConfused" type="Sprite2D" parent="."]
-visible = false
-texture = ExtResource("3_ey63g")
-centered = false
-
-[node name="StreetSign" type="Sprite2D" parent="."]
-visible = false
-texture = ExtResource("5_8wlly")
-centered = false
 
 [node name="Panel 1" type="Node2D" parent="."]
 visible = false
@@ -199,6 +714,7 @@ text = "MARIE
 Just come home, Dorian. This is too much, even for you. I know he screwed you over, but you can't--you can't just--"
 
 [node name="Panel 2" type="Node2D" parent="."]
+visible = false
 
 [node name="DoreanHand2" type="Sprite2D" parent="Panel 2"]
 position = Vector2(704, 362.856)
@@ -223,21 +739,165 @@ text = "DORIAN
 Marie. Slow down. I didn't kill anybody for God's sake."
 
 [node name="Panel 3" type="Node2D" parent="."]
+visible = false
+modulate = Color(1, 1, 1, 0)
+
+[node name="BlackScreen3" type="ColorRect" parent="Panel 3"]
+offset_right = 1920.0
+offset_bottom = 1080.0
+color = Color(0, 0, 0, 1)
+
+[node name="Dialogue3" type="Node2D" parent="Panel 3"]
+position = Vector2(1456, 288)
+
+[node name="DorianDialogue3" parent="Panel 3/Dialogue3" instance=ExtResource("7_33j4g")]
+offset_left = -928.0
+offset_top = 120.0
+offset_right = -72.0
+offset_bottom = 312.0
+theme_override_font_sizes/normal_font_size = 80
+text = "Did I?"
 
 [node name="Panel 4" type="Node2D" parent="."]
+visible = false
+
+[node name="MariePhone4" type="Sprite2D" parent="Panel 4"]
+position = Vector2(-392, 344)
+scale = Vector2(1.79259, 1.79259)
+texture = ExtResource("6_fmysh")
+centered = false
+
+[node name="Dialogue4a" type="Node2D" parent="Panel 4"]
+position = Vector2(520, 288)
+
+[node name="DorianDialogue4a" parent="Panel 4/Dialogue4a" instance=ExtResource("7_33j4g")]
+offset_left = -472.0
+offset_top = -88.0
+offset_right = 480.0
+offset_bottom = 104.0
+text = "DORIAN
+Tell me just what it is you think is going on."
+
+[node name="Dialogue4b" type="Node2D" parent="Panel 4"]
+position = Vector2(-712, 648)
+
+[node name="MarieDialogue4b" parent="Panel 4/Dialogue4b" instance=ExtResource("7_33j4g")]
+offset_left = -320.0
+offset_top = -120.0
+offset_right = 568.0
+offset_bottom = 112.0
+text = "MARIE
+If you didn't do it, then you have nothing to hide. You can turn yourself in. Where are you? I'll come pick you up. We can drive to the station together--"
+
+[node name="Dialogue4c" type="Node2D" parent="Panel 4"]
+position = Vector2(2464, 200)
+
+[node name="DorianDialogue4c" parent="Panel 4/Dialogue4c" instance=ExtResource("7_33j4g")]
+offset_left = -472.0
+offset_top = -88.0
+offset_right = 353.0
+offset_bottom = 103.0
+scale = Vector2(0.940558, 1.13198)
+text = "DORIAN
+Marie. Stop. What's going on?"
+
+[node name="Dialogue4d" type="Node2D" parent="Panel 4"]
+position = Vector2(440, 1224)
+
+[node name="MarieDialogue4d" parent="Panel 4/Dialogue4d" instance=ExtResource("7_33j4g")]
+offset_left = -416.0
+offset_top = -80.0
+offset_right = 360.0
+offset_bottom = 112.0
+text = "MARIE
+Where are you, Dorian? What did you do? What did you--"
 
 [node name="Panel 5" type="Node2D" parent="."]
+visible = false
+
+[node name="DoreanBlank5" type="Sprite2D" parent="Panel 5"]
+modulate = Color(1, 1, 1, 0)
+texture = ExtResource("2_f6xsi")
+centered = false
+
+[node name="Dialogue5a" type="Node2D" parent="Panel 5"]
+modulate = Color(1, 1, 1, 0)
+position = Vector2(1448, 296)
+
+[node name="BeepDialogue5a" parent="Panel 5/Dialogue5a" instance=ExtResource("7_33j4g")]
+offset_left = -928.0
+offset_top = 120.0
+offset_right = -72.0
+offset_bottom = 312.0
+theme_override_font_sizes/normal_font_size = 80
+text = "Beep!"
+
+[node name="Dialogue5b" type="Node2D" parent="Panel 5"]
+modulate = Color(1, 1, 1, 0)
+position = Vector2(1624, 1232)
+
+[node name="DorianDialogue5b" parent="Panel 5/Dialogue5b" instance=ExtResource("7_33j4g")]
+offset_left = -280.0
+offset_top = -72.0
+offset_right = 240.0
+offset_bottom = 64.0
+text = "DORIAN
+Damn it! Where am I?"
 
 [node name="Panel 6" type="Node2D" parent="."]
-
-[node name="BlackScreen" type="ColorRect" parent="."]
 visible = false
-offset_right = 40.0
-offset_bottom = 40.0
+
+[node name="StreetSign6" type="Sprite2D" parent="Panel 6"]
+texture = ExtResource("5_8wlly")
+centered = false
+
+[node name="Dialogue6" type="Node2D" parent="Panel 6"]
+position = Vector2(600, -208)
+
+[node name="DorianDialogue6" parent="Panel 6/Dialogue6" instance=ExtResource("7_33j4g")]
+offset_left = -520.0
+offset_top = -112.0
+offset_right = 472.0
+offset_bottom = 128.0
+text = "DORIAN
+Marbury and 3rd, seems like. Christ. I need to stop drinking."
+
+[node name="Panel 7" type="Node2D" parent="."]
+visible = false
+
+[node name="DoreanPhoneHand7" type="Sprite2D" parent="Panel 7"]
+position = Vector2(-3056, -1640)
+scale = Vector2(2.54074, 2.54074)
+texture = ExtResource("4_rk45k")
+centered = false
+
+[node name="Dialogue7" type="Node2D" parent="Panel 7"]
+position = Vector2(1456, 1224)
+
+[node name="DorianDialogue7" parent="Panel 7/Dialogue7" instance=ExtResource("7_33j4g")]
+offset_left = -920.0
+offset_top = -80.0
+offset_right = -416.0
+offset_bottom = 80.0
+text = "DORIAN
+And what have I done? Is that blood..."
+
+[node name="Panel 8" type="Node2D" parent="."]
+visible = false
+
+[node name="BlackScreen8" type="ColorRect" parent="Panel 8"]
+modulate = Color(1, 1, 1, 0)
+offset_right = 1920.0
+offset_bottom = 1080.0
 color = Color(0, 0, 0, 1)
 
-[node name="BlackScreen3" type="ColorRect" parent="."]
-visible = false
-offset_right = 40.0
-offset_bottom = 40.0
-color = Color(0, 0, 0, 1)
+[node name="Dialogue8" type="Node2D" parent="Panel 8"]
+position = Vector2(1472, 1016)
+
+[node name="DorianDialogue8" parent="Panel 8/Dialogue8" instance=ExtResource("7_33j4g")]
+offset_left = -928.0
+offset_top = 120.0
+offset_right = -64.0
+offset_bottom = 360.0
+theme_override_font_sizes/normal_font_size = 50
+text = "Murder? After the year I've had, I ... wouldn't put it past myself."

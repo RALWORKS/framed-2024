@@ -44,33 +44,43 @@ DORIAN (VO): After the year I've had, I ... wouldn't put it past myself.
 
 # Variables
 
-var slide_count = 0
+# Animation Player
+@onready var anim_play = $AnimationPlayer
 
-# Sprites
-@onready var dorean_blank = $DoreanBlank
-@onready var dorean_confused = $DoreanConfused
-@onready var dorean_phone_hand = $DoreanPhoneHand
-@onready var street_sign = $StreetSign
-@onready var marie_phone = $"Panel 1/MariePhone1"
+# Panels
+@onready var panel1 = $"Panel 1"
+@onready var panel2 = $"Panel 2"
+@onready var panel3 = $"Panel 3"
+@onready var panel4 = $"Panel 4"
+@onready var panel5 = $"Panel 5"
+@onready var panel6 = $"Panel 6"
+@onready var panel7 = $"Panel 7"
+@onready var panel8 = $"Panel 8"
 
-# Dialogue Boxes
-@onready var marie_1 = $"Panel 1/Dialogue1"
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	
 	# when scene starts - need to hide stuff
-	dorean_blank.visible = false
-	dorean_confused.visible = false
-	dorean_phone_hand.visible = false
-	street_sign.visible = false
-	marie_1.visible = false
-	marie_phone.visible = true
-	marie_1.visible = true
+	panel1.visible = true
+	panel2.visible = false
+	panel3.visible = false
+	panel4.visible = false
+	panel5.visible = false
+	panel6.visible = false
+	panel7.visible = false
+	panel8.visible = false
 	
-	pass # Replace with function body.
+	anim_play.play("Panel 1")
+	
 
 
 func _process(delta):
-	if Input.is_action_just_released("Next"):
-		slide_count += 1
+	if Input.is_action_just_pressed("Next"):
+		if anim_play.current_animation != "Panel 8":
+			panel2.visible = true
+			panel1.visible = false
+			anim_play.play("Panel 2")
+		else :
+			# change scene
+			get_tree().quit()
