@@ -723,3 +723,111 @@ theme_override_styles/normal = SubResource("StyleBoxEmpty_0823d")
 text = "Have I pieced it together enough?
 
 Will I be able to defend myself?"
+
+[node name="9" type="Node2D" parent="."]
+
+[node name="ColorRect" type="ColorRect" parent="9"]
+offset_left = -62.0
+offset_top = -24.0
+offset_right = 2033.0
+offset_bottom = 1158.0
+color = Color(0, 0, 0, 1)
+
+[node name="Dialogue Box" parent="9/ColorRect" instance=ExtResource("5_ng1dc")]
+layout_mode = 0
+offset_left = 731.0
+offset_top = 523.0
+offset_right = 1161.0
+offset_bottom = 573.0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_426ka")
+text = "I know a man is dead."
+
+[node name="10" type="Node2D" parent="."]
+
+[node name="ColorRect" type="ColorRect" parent="10"]
+offset_left = -62.0
+offset_top = -24.0
+offset_right = 2033.0
+offset_bottom = 1158.0
+color = Color(0, 0, 0, 1)
+
+[node name="Dialogue Box" parent="10/ColorRect" instance=ExtResource("5_ng1dc")]
+layout_mode = 0
+offset_left = 613.0
+offset_top = 523.0
+offset_right = 1275.0
+offset_bottom = 573.0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_426ka")
+text = "I know I woke up on Marbury & 3rd."
+
+[node name="11" type="Node2D" parent="."]
+
+[node name="ColorRect" type="ColorRect" parent="11"]
+offset_left = -62.0
+offset_top = -24.0
+offset_right = 2033.0
+offset_bottom = 1158.0
+color = Color(0, 0, 0, 1)
+
+[node name="Dialogue Box" parent="11/ColorRect" instance=ExtResource("5_ng1dc")]
+layout_mode = 0
+offset_left = 773.0
+offset_top = 523.0
+offset_right = 1275.0
+offset_bottom = 573.0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_426ka")
+text = "I know I'm Dorian."
+
+[node name="12" type="Node2D" parent="."]
+
+[node name="ColorRect" type="ColorRect" parent="12"]
+offset_left = -62.0
+offset_top = -24.0
+offset_right = 2033.0
+offset_bottom = 1158.0
+color = Color(0, 0, 0, 1)
+
+[node name="Dialogue Box" parent="12/ColorRect" instance=ExtResource("5_ng1dc")]
+layout_mode = 0
+offset_left = 773.0
+offset_top = 523.0
+offset_right = 1275.0
+offset_bottom = 573.0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_426ka")
+text = "I'm scattered."
+
+[node name="13" type="Node2D" parent="."]
+
+[node name="ColorRect" type="ColorRect" parent="13"]
+offset_left = -62.0
+offset_top = -24.0
+offset_right = 2033.0
+offset_bottom = 1158.0
+color = Color(0, 0, 0, 1)
+
+[node name="Dialogue Box" parent="13/ColorRect" instance=ExtResource("5_ng1dc")]
+layout_mode = 0
+offset_left = 773.0
+offset_top = 523.0
+offset_right = 1275.0
+offset_bottom = 573.0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_426ka")
+text = "It's still out of order."
+
+[node name="14" type="Node2D" parent="."]
+
+[node name="ColorRect" type="ColorRect" parent="14"]
+offset_left = -62.0
+offset_top = -24.0
+offset_right = 2033.0
+offset_bottom = 1158.0
+color = Color(0, 0, 0, 1)
+
+[node name="Dialogue Box" parent="14/ColorRect" instance=ExtResource("5_ng1dc")]
+layout_mode = 0
+offset_left = 773.0
+offset_top = 523.0
+offset_right = 1275.0
+offset_bottom = 573.0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_426ka")
+text = "But I know who I am."
