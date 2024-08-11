@@ -12,6 +12,8 @@ func _ready():
 	
 	if $DemoUI.visible:
 		_show_demo_ui()
+	
+	calm()
 
 func calm():
 	if horror_playing:
