@@ -1,6 +1,8 @@
 extends CharacterBody2D
 
-var speed = 200
+var speed = 250
+
+@export var is_dorian = true
 
 
 func get_input():
