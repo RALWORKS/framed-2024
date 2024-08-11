@@ -4,6 +4,9 @@ var index = 0
 var paused = false
 
 var OPTIONS = "OPTIONS"
+var HORROR = "HORROR"
+var HEART = "HEART"
+var CALM = "CALM"
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -22,6 +25,9 @@ func _ready():
 		[null, $"6"],
 		["7a", $"7"],
 		[null, $"8", OPTIONS],
+		["9a", $"9", HORROR],
+		["10a", $"10"],
+		["11a", $"11"],
 	]
 	play()
 	
@@ -55,6 +61,13 @@ func play():
 	
 	if page[0] != null:
 		$AnimationPlayer.play(page[0])
+	
+	if HORROR in page:
+		Music.horror()
+	elif CALM in page:
+		Music.calm()
+	elif HEART in page:
+		Music.heart()
 
 func flip(to):
 	hide_panels()
