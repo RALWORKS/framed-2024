@@ -1,4 +1,4 @@
-[gd_scene load_steps=23 format=3 uid="uid://byyy1gvkr02b0"]
+[gd_scene load_steps=25 format=3 uid="uid://byyy1gvkr02b0"]
 
 [ext_resource type="Script" path="res://Scripts/Chapter 3/mckenzie-the-younger.gd" id="1_qnkf3"]
 [ext_resource type="Texture2D" uid="uid://bw0n5w5nx5and" path="res://Assets/Initial_alley_01.png" id="2_2agux"]
@@ -10,6 +10,7 @@
 [ext_resource type="Texture2D" uid="uid://bghe5teofntj6" path="res://Assets/Officer_profile_full.png" id="8_1382f"]
 [ext_resource type="Texture2D" uid="uid://kk1umvxxppwt" path="res://Assets/Chapter 1/initial-alley/Dorian_3qrtr_close_blank.png" id="8_q6f05"]
 [ext_resource type="Texture2D" uid="uid://dvba2v7f0yidm" path="res://Assets/Dorian_3qrtr_close_angry.png" id="10_lr62s"]
+[ext_resource type="Texture2D" uid="uid://bihfxq87qsk53" path="res://Assets/Chapter 1/Dorian_3qrtr_full_silhouette.png" id="11_7indt"]
 
 [sub_resource type="Animation" id="Animation_cs7na"]
 resource_name = "1a"
@@ -340,6 +341,78 @@ tracks/23/keys = {
 "update": 0,
 "values": [Vector2(-403, 170)]
 }
+tracks/24/type = "value"
+tracks/24/imported = false
+tracks/24/enabled = true
+tracks/24/path = NodePath("30/man:position")
+tracks/24/interp = 1
+tracks/24/loop_wrap = true
+tracks/24/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(2673, 1444)]
+}
+tracks/25/type = "value"
+tracks/25/imported = false
+tracks/25/enabled = true
+tracks/25/path = NodePath("30/man:rotation")
+tracks/25/interp = 1
+tracks/25/loop_wrap = true
+tracks/25/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [-0.359538]
+}
+tracks/26/type = "value"
+tracks/26/imported = false
+tracks/26/enabled = true
+tracks/26/path = NodePath("30/dorian:rotation")
+tracks/26/interp = 1
+tracks/26/loop_wrap = true
+tracks/26/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [-0.359538]
+}
+tracks/27/type = "value"
+tracks/27/imported = false
+tracks/27/enabled = true
+tracks/27/path = NodePath("30/dorian:position")
+tracks/27/interp = 1
+tracks/27/loop_wrap = true
+tracks/27/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(411, 1731)]
+}
+tracks/28/type = "value"
+tracks/28/imported = false
+tracks/28/enabled = true
+tracks/28/path = NodePath("30/ColorRect:visible")
+tracks/28/interp = 1
+tracks/28/loop_wrap = true
+tracks/28/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/29/type = "value"
+tracks/29/imported = false
+tracks/29/enabled = true
+tracks/29/path = NodePath("30/ColorRect:color")
+tracks/29/interp = 1
+tracks/29/loop_wrap = true
+tracks/29/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(0, 0, 0, 1)]
+}
 
 [sub_resource type="Animation" id="Animation_rqpad"]
 resource_name = "3a"
@@ -620,6 +693,82 @@ tracks/0/keys = {
 "values": [Vector2(-403, 170), Vector2(850, 685)]
 }
 
+[sub_resource type="Animation" id="Animation_7ta64"]
+resource_name = "30a"
+length = 2.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("30/man:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(2673, 1444), Vector2(1489, 859)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("30/man:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0.3),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [-0.359538]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("30/dorian:rotation")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, -0.359538]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("30/dorian:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0.3),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(411, 1731)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("30/ColorRect:visible")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0, 0.3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [false, true]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("30/ColorRect:color")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0, 0.5, 0.6, 0.7),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Color(0.81502, 1.01075e-06, 1.92523e-07, 1), Color(0, 0, 0, 1), Color(0.815686, 0, 0, 1), Color(0, 0, 0, 1)]
+}
+
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_n4xwd"]
 _data = {
 "10a": SubResource("Animation_qls8s"),
@@ -627,6 +776,7 @@ _data = {
 "18a": SubResource("Animation_qnp3h"),
 "1a": SubResource("Animation_cs7na"),
 "27a": SubResource("Animation_evwdb"),
+"30a": SubResource("Animation_7ta64"),
 "3a": SubResource("Animation_rqpad"),
 "5a": SubResource("Animation_ov6yx"),
 "7a": SubResource("Animation_1wqx1"),
@@ -1367,6 +1517,7 @@ offset_top = 90.0
 offset_right = 1182.0
 offset_bottom = 154.0
 text = "\"Framed? No buddy. I definitely killed him.\""
+to_index = 29
 
 [node name="What?" parent="24" instance=ExtResource("6_eohac")]
 offset_left = 332.0
@@ -1436,7 +1587,7 @@ text = "DORIAN: What?"
 [node name="27" type="Node2D" parent="."]
 
 [node name="bg" type="Sprite2D" parent="27"]
-position = Vector2(850, 685)
+position = Vector2(-403, 170)
 scale = Vector2(2, 2)
 texture = ExtResource("2_2agux")
 
@@ -1453,3 +1604,93 @@ texture = ExtResource("8_1382f")
 [node name="dorian" type="Sprite2D" parent="27/bg"]
 position = Vector2(116.667, 250)
 texture = ExtResource("3_3m0rl")
+
+[node name="28" type="Node2D" parent="."]
+
+[node name="bg" type="Sprite2D" parent="28"]
+position = Vector2(-892, -169)
+scale = Vector2(2, 2)
+texture = ExtResource("2_2agux")
+
+[node name="man" type="Sprite2D" parent="28/bg"]
+position = Vector2(1176, 314)
+scale = Vector2(0.7, 0.7)
+texture = ExtResource("4_uls6k")
+flip_h = true
+
+[node name="dorian" type="Sprite2D" parent="28/bg"]
+position = Vector2(116.667, 250)
+texture = ExtResource("3_3m0rl")
+
+[node name="Dialogue Box" parent="28" instance=ExtResource("5_c5ymi")]
+offset_left = 476.0
+offset_top = 210.0
+offset_right = 798.0
+offset_bottom = 308.0
+text = "What ... ?"
+
+[node name="29" type="Node2D" parent="."]
+
+[node name="bg" type="Sprite2D" parent="29"]
+position = Vector2(68, -113)
+scale = Vector2(2, 2)
+texture = ExtResource("2_2agux")
+
+[node name="man" type="Sprite2D" parent="29/bg"]
+position = Vector2(1176, 314)
+scale = Vector2(0.7, 0.7)
+texture = ExtResource("4_uls6k")
+flip_h = true
+
+[node name="dorian" type="Sprite2D" parent="29/bg"]
+position = Vector2(116.667, 250)
+texture = ExtResource("3_3m0rl")
+
+[node name="Dialogue Box" parent="29" instance=ExtResource("5_c5ymi")]
+offset_left = 743.0
+offset_top = 33.0
+offset_right = 1074.0
+offset_bottom = 161.0
+text = "I killed Jeff McKenzie."
+
+[node name="30" type="Node2D" parent="."]
+
+[node name="bg" type="Sprite2D" parent="30"]
+position = Vector2(-741, 466)
+scale = Vector2(3, 3)
+texture = ExtResource("2_2agux")
+
+[node name="man" type="Sprite2D" parent="30"]
+position = Vector2(2673, 1444)
+rotation = -0.359538
+scale = Vector2(1.8, 1.8)
+texture = ExtResource("4_uls6k")
+flip_h = true
+
+[node name="dorian" type="Sprite2D" parent="30"]
+position = Vector2(411, 1731)
+scale = Vector2(2.5, 2.5)
+texture = ExtResource("3_3m0rl")
+
+[node name="ColorRect" type="ColorRect" parent="30"]
+visible = false
+offset_left = -42.0
+offset_top = -45.0
+offset_right = 1949.0
+offset_bottom = 1110.0
+color = Color(0.81502, 1.01075e-06, 1.92523e-07, 1)
+
+[node name="Label" type="Label" parent="30/ColorRect"]
+offset_left = 781.0
+offset_top = 531.0
+offset_right = 1105.0
+offset_bottom = 617.0
+theme_override_fonts/font = ExtResource("7_42jfm")
+theme_override_font_sizes/font_size = 60
+text = "Shit ..."
+
+[node name="Sprite2D" type="Sprite2D" parent="30/ColorRect"]
+position = Vector2(971, 857)
+rotation = -1.5708
+scale = Vector2(0.9, 0.9)
+texture = ExtResource("11_7indt")
