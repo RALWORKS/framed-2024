@@ -937,7 +937,6 @@ theme_override_styles/normal = SubResource("StyleBoxEmpty_pov63")
 text = "A brick to the head is all it takes."
 
 [node name="11" type="Node2D" parent="."]
-visible = false
 
 [node name="bg" type="Sprite2D" parent="11"]
 position = Vector2(994, 524)
@@ -990,11 +989,12 @@ text = "Oh God.
 [node name="Dialogue Box2" parent="11" instance=ExtResource("5_c5ymi")]
 offset_left = 182.0
 offset_top = 959.0
-offset_right = 705.0
+offset_right = 832.0
 offset_bottom = 1046.0
-text = "Did that cop just see--?"
+text = "I'm completely surrounded."
 
 [node name="12" type="Node2D" parent="."]
+visible = false
 
 [node name="bg" type="Sprite2D" parent="12"]
 position = Vector2(261, 424)
@@ -1022,6 +1022,7 @@ You were in no state to do anything when they brought you there son. I saw. Even
 "
 
 [node name="13" type="Node2D" parent="."]
+visible = false
 
 [node name="bg" type="Sprite2D" parent="13"]
 position = Vector2(261, 424)
@@ -1047,6 +1048,7 @@ text = "DORIAN:
 Brought me where?"
 
 [node name="14" type="Node2D" parent="."]
+visible = false
 
 [node name="bg" type="Sprite2D" parent="14"]
 position = Vector2(261, 424)
@@ -1074,6 +1076,7 @@ To my brother's house. I've been hanging close by. He hates it when I do that, b
 "
 
 [node name="15" type="Node2D" parent="."]
+visible = false
 
 [node name="bg" type="Sprite2D" parent="15"]
 position = Vector2(261, 424)
@@ -1100,6 +1103,7 @@ text = "HOMELESS MAN:
 They pull up with the car, yeah? I think 'this is it; he's gonna die.' So I start throwing rocks at the window, tryna wake him. And then I see they're dragging this limp body out of the car. I thought *he* was gonna be framed for *your* murder. But no, you're breathing still. Heavy, like. A real puzzler."
 
 [node name="16" type="Node2D" parent="."]
+visible = false
 
 [node name="bg" type="Sprite2D" parent="16"]
 position = Vector2(261, 424)
@@ -1126,6 +1130,7 @@ text = "HOMELESS MAN:
 Until you stumbled out an hour later, bloody, saying there's a dead man and you don't know what to do. I told you: 'clean your hands in that puddle there, son, and then run."
 
 [node name="17" type="Node2D" parent="."]
+visible = false
 
 [node name="bg" type="Sprite2D" parent="17"]
 position = Vector2(-269, 100)
@@ -1152,6 +1157,7 @@ text = "HOMELESS MAN:
 Uh oh ..."
 
 [node name="18" type="Node2D" parent="."]
+visible = false
 
 [node name="bg" type="Sprite2D" parent="18"]
 position = Vector2(702, 722)
