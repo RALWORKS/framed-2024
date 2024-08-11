@@ -13,3 +13,12 @@ config_version=5
 config/name="Framed"
 config/features=PackedStringArray("4.2", "Forward Plus")
 config/icon="res://icon.svg"
+
+[autoload]
+
+Transition="*res://Scenes/Global/Transition.tscn"
+
+[display]
+
+window/size/viewport_width=1920
+window/size/viewport_height=1080

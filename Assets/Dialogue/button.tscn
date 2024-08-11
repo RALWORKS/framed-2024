@@ -1,0 +1,23 @@
+[gd_scene load_steps=3 format=3 uid="uid://dlqm5dgeomybm"]
+
+[ext_resource type="FontFile" uid="uid://bmxov1aoclv2k" path="res://Assets/Fonts/Courier New.ttf" id="1_n3pa2"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_beih7"]
+bg_color = Color(0, 0, 0, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(1, 1, 1, 1)
+border_blend = true
+corner_radius_top_left = 40
+corner_radius_top_right = 40
+corner_radius_bottom_right = 40
+corner_radius_bottom_left = 40
+
+[node name="Button" type="Button"]
+offset_right = 256.0
+offset_bottom = 64.0
+theme_override_fonts/font = ExtResource("1_n3pa2")
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxFlat_beih7")

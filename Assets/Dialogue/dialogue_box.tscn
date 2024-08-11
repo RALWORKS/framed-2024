@@ -1,0 +1,28 @@
+[gd_scene load_steps=3 format=3 uid="uid://d4cbyalgs01x8"]
+
+[ext_resource type="FontFile" uid="uid://bmxov1aoclv2k" path="res://Assets/Fonts/Courier New.ttf" id="1_fffur"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_obcq0"]
+content_margin_left = 30.0
+content_margin_top = 30.0
+content_margin_right = 30.0
+content_margin_bottom = 30.0
+bg_color = Color(0, 0, 0, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(1, 1, 1, 1)
+border_blend = true
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[node name="Dialogue Box" type="RichTextLabel"]
+offset_right = 952.0
+offset_bottom = 192.0
+theme_override_colors/default_color = Color(1, 1, 1, 1)
+theme_override_fonts/normal_font = ExtResource("1_fffur")
+theme_override_font_sizes/normal_font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxFlat_obcq0")
