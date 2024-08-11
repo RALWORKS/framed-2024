@@ -20,7 +20,7 @@ func _ready():
 	
 	sequence = [
 		# Node2D["1a", $"1"],
-		["1a", $"1"],
+		["1a", $"1", HEART],
 		[null, $"2", OPTIONS],
 		[null, $"3"],
 		[null, $"4"],

@@ -8,7 +8,7 @@
 [ext_resource type="PackedScene" uid="uid://dlqm5dgeomybm" path="res://Assets/Dialogue/button.tscn" id="6_7w5y3"]
 [ext_resource type="Texture2D" uid="uid://c08bvriqe0xji" path="res://Assets/Dorian_3qrtr_close_confused.png" id="6_mfvfo"]
 [ext_resource type="Texture2D" uid="uid://1cq7arrcntf0" path="res://Assets/Chapter 1/initial-alley/Dorian_3qrtr_close_phonehand.png" id="8_tsdf1"]
-[ext_resource type="Texture2D" uid="uid://behfnptfg82vf" path="res://Assets/Dorian_hand_for_chin.png" id="9_gjqud"]
+[ext_resource type="Texture2D" uid="uid://dumxhndas70uu" path="res://Assets/Dorian_hand_for_chin.png" id="9_gjqud"]
 [ext_resource type="Texture2D" uid="uid://c0gku3v6g0tgk" path="res://Assets/Chapter 1/Dorian_3qrtr_full.png" id="10_hxt8s"]
 [ext_resource type="PackedScene" uid="uid://citwqd4hfhtll" path="res://Assets/UI/puzzle_animation.tscn" id="11_lndx2"]
 
@@ -151,6 +151,37 @@ tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
 "times": PackedFloat32Array(0, 0.3, 1.5),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_a0uuw"]
+resource_name = "7a"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("7/ColorRect:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5, 1),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_uch1h"]
+resource_name = "8a"
+length = 1.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("8/ColorRect/Node2D:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0.1, 0.4, 1.5),
 "transitions": PackedFloat32Array(1, 1, 1),
 "update": 0,
 "values": [Color(1, 1, 1, 0), Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
@@ -313,37 +344,6 @@ tracks/12/keys = {
 "transitions": PackedFloat32Array(1),
 "update": 0,
 "values": [Color(1, 1, 1, 0)]
-}
-
-[sub_resource type="Animation" id="Animation_a0uuw"]
-resource_name = "7a"
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("7/ColorRect:modulate")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.5, 1),
-"transitions": PackedFloat32Array(1, 1, 1),
-"update": 0,
-"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
-}
-
-[sub_resource type="Animation" id="Animation_uch1h"]
-resource_name = "8a"
-length = 1.5
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("8/ColorRect/Node2D:modulate")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0.1, 0.4, 1.5),
-"transitions": PackedFloat32Array(1, 1, 1),
-"update": 0,
-"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_00x58"]
