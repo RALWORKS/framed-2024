@@ -1,0 +1,39 @@
+[gd_scene load_steps=3 format=3 uid="uid://dm0473j6o5rn"]
+
+[ext_resource type="PackedScene" uid="uid://citwqd4hfhtll" path="res://Assets/UI/puzzle_animation.tscn" id="1_0tqqt"]
+[ext_resource type="FontFile" uid="uid://bmxov1aoclv2k" path="res://Assets/Fonts/Courier New.ttf" id="2_l8xb5"]
+
+[node name="NeutralEnd" type="Node2D"]
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_right = 1986.0
+offset_bottom = 1053.0
+color = Color(0, 0, 0, 1)
+
+[node name="PuzzleAnimation" parent="." instance=ExtResource("1_0tqqt")]
+modulate = Color(1, 1, 1, 0.654902)
+position = Vector2(520, 651)
+scale = Vector2(0.7, 0.7)
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+offset_left = 536.0
+offset_top = 219.0
+offset_right = 852.0
+offset_bottom = 364.0
+theme_override_fonts/normal_font = ExtResource("2_l8xb5")
+theme_override_fonts/bold_font = ExtResource("2_l8xb5")
+theme_override_font_sizes/bold_font_size = 100
+bbcode_enabled = true
+text = "[b]End.[/b]"
+
+[node name="RichTextLabel2" type="RichTextLabel" parent="."]
+offset_left = 539.0
+offset_top = 413.0
+offset_right = 1036.0
+offset_bottom = 558.0
+theme_override_fonts/normal_font = ExtResource("2_l8xb5")
+theme_override_fonts/bold_font = ExtResource("2_l8xb5")
+theme_override_font_sizes/normal_font_size = 50
+theme_override_font_sizes/bold_font_size = 50
+bbcode_enabled = true
+text = "Did I find enough pieces?"
