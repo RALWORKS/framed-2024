@@ -9,4 +9,5 @@ func _ready():
 
 
 func _on_pressed():
-	owner.goto(to_index)
+	if "goto" in owner:
+		owner.goto(to_index)
