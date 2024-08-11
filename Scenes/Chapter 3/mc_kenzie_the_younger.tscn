@@ -1,4 +1,4 @@
-[gd_scene load_steps=21 format=3 uid="uid://byyy1gvkr02b0"]
+[gd_scene load_steps=22 format=3 uid="uid://byyy1gvkr02b0"]
 
 [ext_resource type="Script" path="res://Scripts/Chapter 3/mckenzie-the-younger.gd" id="1_qnkf3"]
 [ext_resource type="Texture2D" uid="uid://bw0n5w5nx5and" path="res://Assets/Initial_alley_01.png" id="2_2agux"]
@@ -9,6 +9,7 @@
 [ext_resource type="FontFile" uid="uid://bmxov1aoclv2k" path="res://Assets/Fonts/Courier New.ttf" id="7_42jfm"]
 [ext_resource type="Texture2D" uid="uid://bghe5teofntj6" path="res://Assets/Officer_profile_full.png" id="8_1382f"]
 [ext_resource type="Texture2D" uid="uid://kk1umvxxppwt" path="res://Assets/Chapter 1/initial-alley/Dorian_3qrtr_close_blank.png" id="8_q6f05"]
+[ext_resource type="Texture2D" uid="uid://dvba2v7f0yidm" path="res://Assets/Dorian_3qrtr_close_angry.png" id="10_lr62s"]
 
 [sub_resource type="Animation" id="Animation_cs7na"]
 resource_name = "1a"
@@ -737,7 +738,8 @@ offset_left = 814.0
 offset_top = 170.0
 offset_right = 1510.0
 offset_bottom = 234.0
-text = "\"Who's they?\""
+text = "\"Who drugged me?\""
+to_index = 19
 
 [node name="What?" parent="4" instance=ExtResource("6_eohac")]
 offset_left = 814.0
@@ -748,6 +750,7 @@ text = "\"What happened?\""
 to_index = 11
 
 [node name="5" type="Node2D" parent="."]
+visible = false
 
 [node name="bg" type="Sprite2D" parent="5"]
 position = Vector2(-550, 267)
@@ -795,6 +798,7 @@ offset_bottom = 1023.0
 text = "Didn't I say to wash your hands? You missed a spot!"
 
 [node name="6" type="Node2D" parent="."]
+visible = false
 
 [node name="bg" type="Sprite2D" parent="6"]
 position = Vector2(301, 426)
@@ -814,6 +818,7 @@ offset_bottom = 470.0
 text = "..."
 
 [node name="7" type="Node2D" parent="."]
+visible = false
 
 [node name="bg" type="Sprite2D" parent="7"]
 position = Vector2(261, 424)
@@ -852,6 +857,7 @@ text = "HOMELESS MAN:
 Yeah."
 
 [node name="8" type="Node2D" parent="."]
+visible = false
 
 [node name="bg" type="Sprite2D" parent="8"]
 position = Vector2(261, 424)
@@ -886,6 +892,7 @@ text = "\"What did you see?\""
 to_index = 11
 
 [node name="9" type="Node2D" parent="."]
+visible = false
 
 [node name="bg" type="Sprite2D" parent="9"]
 position = Vector2(261, 424)
@@ -937,6 +944,7 @@ theme_override_styles/normal = SubResource("StyleBoxEmpty_pov63")
 text = "A brick to the head is all it takes."
 
 [node name="11" type="Node2D" parent="."]
+visible = false
 
 [node name="bg" type="Sprite2D" parent="11"]
 position = Vector2(994, 524)
@@ -1177,3 +1185,164 @@ texture = ExtResource("8_1382f")
 [node name="dorian" type="Sprite2D" parent="18/bg"]
 position = Vector2(164.5, 245)
 texture = ExtResource("3_3m0rl")
+
+[node name="19" type="Node2D" parent="."]
+
+[node name="bg" type="Sprite2D" parent="19"]
+position = Vector2(261, 424)
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("2_2agux")
+
+[node name="man" type="Sprite2D" parent="19/bg"]
+position = Vector2(1176, 314)
+scale = Vector2(0.7, 0.7)
+texture = ExtResource("4_uls6k")
+flip_h = true
+
+[node name="dorian" type="Sprite2D" parent="19/bg"]
+position = Vector2(116.667, 250)
+texture = ExtResource("3_3m0rl")
+
+[node name="Dialogue Box" parent="19" instance=ExtResource("5_c5ymi")]
+offset_left = 845.0
+offset_top = 195.0
+offset_right = 1762.0
+offset_bottom = 460.0
+text = "HOMELESS MAN:
+
+Well, the people who dragged you up the stairs to him I'd assume. Mob, if I had to guess. Jeff said something about his boss taking money."
+
+[node name="20" type="Node2D" parent="."]
+
+[node name="bg" type="Sprite2D" parent="20"]
+position = Vector2(323, 536)
+scale = Vector2(2, 2)
+texture = ExtResource("2_2agux")
+
+[node name="dorian" type="Sprite2D" parent="20/bg"]
+position = Vector2(188, -20)
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("10_lr62s")
+
+[node name="Dialogue Box" parent="20" instance=ExtResource("5_c5ymi")]
+offset_left = 1078.0
+offset_top = 676.0
+offset_right = 1486.0
+offset_bottom = 851.0
+text = "DORIAN:
+
+Wait ..."
+
+[node name="Dialogue Box2" parent="20" instance=ExtResource("5_c5ymi")]
+offset_left = 1276.0
+offset_top = 821.0
+offset_right = 1679.0
+offset_bottom = 922.0
+text = "Jeff MCKENZIE?"
+
+[node name="21" type="Node2D" parent="."]
+
+[node name="bg" type="Sprite2D" parent="21"]
+position = Vector2(-403, 170)
+scale = Vector2(2, 2)
+texture = ExtResource("2_2agux")
+
+[node name="man" type="Sprite2D" parent="21/bg"]
+position = Vector2(1176, 314)
+scale = Vector2(0.7, 0.7)
+texture = ExtResource("4_uls6k")
+flip_h = true
+
+[node name="dorian" type="Sprite2D" parent="21/bg"]
+position = Vector2(116.667, 250)
+texture = ExtResource("3_3m0rl")
+
+[node name="Dialogue Box" parent="21" instance=ExtResource("5_c5ymi")]
+offset_left = 1002.0
+offset_top = 236.0
+offset_right = 1571.0
+offset_bottom = 330.0
+text = "HOMELESS MAN: My brother."
+
+[node name="22" type="Node2D" parent="."]
+
+[node name="bg" type="Sprite2D" parent="22"]
+position = Vector2(-403, 170)
+scale = Vector2(2, 2)
+texture = ExtResource("2_2agux")
+
+[node name="man" type="Sprite2D" parent="22/bg"]
+position = Vector2(1176, 314)
+scale = Vector2(0.7, 0.7)
+texture = ExtResource("4_uls6k")
+flip_h = true
+
+[node name="dorian" type="Sprite2D" parent="22/bg"]
+position = Vector2(116.667, 250)
+texture = ExtResource("3_3m0rl")
+
+[node name="Dialogue Box" parent="22" instance=ExtResource("5_c5ymi")]
+offset_left = 303.0
+offset_top = 74.0
+offset_right = 901.0
+offset_bottom = 175.0
+bbcode_enabled = true
+text = "DORIAN: Do you know who [b]I[/b] am?"
+
+[node name="23" type="Node2D" parent="."]
+
+[node name="bg" type="Sprite2D" parent="23"]
+position = Vector2(-403, 170)
+scale = Vector2(2, 2)
+texture = ExtResource("2_2agux")
+
+[node name="man" type="Sprite2D" parent="23/bg"]
+position = Vector2(1176, 314)
+scale = Vector2(0.7, 0.7)
+texture = ExtResource("4_uls6k")
+flip_h = true
+
+[node name="dorian" type="Sprite2D" parent="23/bg"]
+position = Vector2(116.667, 250)
+texture = ExtResource("3_3m0rl")
+
+[node name="Dialogue Box" parent="23" instance=ExtResource("5_c5ymi")]
+offset_left = 803.0
+offset_top = 396.0
+offset_right = 1268.0
+offset_bottom = 590.0
+bbcode_enabled = true
+text = "HOMELESS MAN:
+
+You're the guy they framed."
+
+[node name="24" type="Node2D" parent="."]
+
+[node name="bg" type="Sprite2D" parent="24"]
+position = Vector2(-403, 170)
+scale = Vector2(2, 2)
+texture = ExtResource("2_2agux")
+
+[node name="man" type="Sprite2D" parent="24/bg"]
+position = Vector2(1176, 314)
+scale = Vector2(0.7, 0.7)
+texture = ExtResource("4_uls6k")
+flip_h = true
+
+[node name="dorian" type="Sprite2D" parent="24/bg"]
+position = Vector2(116.667, 250)
+texture = ExtResource("3_3m0rl")
+
+[node name="Killed" parent="24" instance=ExtResource("6_eohac")]
+offset_left = 332.0
+offset_top = 90.0
+offset_right = 1182.0
+offset_bottom = 154.0
+text = "\"Framed? No buddy. I definitely killed him.\""
+
+[node name="What?" parent="24" instance=ExtResource("6_eohac")]
+offset_left = 332.0
+offset_top = 175.0
+offset_right = 1182.0
+offset_bottom = 239.0
+text = "\"Tell me everything you know.\""
