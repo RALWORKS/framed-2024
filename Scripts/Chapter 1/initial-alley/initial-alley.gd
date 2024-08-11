@@ -36,7 +36,8 @@ func _ready():
 	[null, $"Panel 11", OPTIONS],
 	["Panel 12", $"Panel 12", TRANSITION],
 	[null, $"Panel 13", OPTIONS],
-	["Panel 14", $"Panel 14", TRANSITION]
+	["Panel 14", $"Panel 14", TRANSITION],
+	[null, $"Panel 15", OPTIONS],
 	]
 	play()
 	
