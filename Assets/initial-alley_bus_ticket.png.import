@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://6fsjxopufx7n"
-path="res://.godot/imported/Dorian_hand_for_chin.png-e76a96ef20aa4f81abf91ab07275f7a8.ctex"
+uid="uid://2a2rvrhmkrbl"
+path="res://.godot/imported/initial-alley_bus_ticket.png-0a92566c15b41574b6867968017dbee9.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Dorian_hand_for_chin.png"
-dest_files=["res://.godot/imported/Dorian_hand_for_chin.png-e76a96ef20aa4f81abf91ab07275f7a8.ctex"]
+source_file="res://Assets/initial-alley_bus_ticket.png"
+dest_files=["res://.godot/imported/initial-alley_bus_ticket.png-0a92566c15b41574b6867968017dbee9.ctex"]
 
 [params]
 

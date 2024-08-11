@@ -1,18 +1,5 @@
 extends Node2D
 
-# Animation Player
-@onready var anim_play = $AnimationPlayer
-
-# Panels
-@onready var panel1 = $"Panel 1"
-@onready var panel2 = $"Panel 2"
-@onready var panel3 = $"Panel 3"
-@onready var panel4 = $"Panel 4"
-@onready var panel5 = $"Panel 5"
-@onready var panel6 = $"Panel 6"
-@onready var panel7 = $"Panel 7"
-@onready var panel8 = $"Panel 8"
-
 var index = 0
 var paused = false
 
@@ -30,7 +17,6 @@ func _ready():
 	# when scene starts - need to hide stuff
 	hide_panels()
 	
-	#anim_play.play("Panel 1")
 	
 	
 	sequence = [
@@ -48,6 +34,9 @@ func _ready():
 	[null, $"Panel 9", OPTIONS, TRANSITION],
 	["Panel 10", $"Panel 10", TRANSITION],
 	[null, $"Panel 11", OPTIONS],
+	["Panel 12", $"Panel 12", TRANSITION],
+	[null, $"Panel 13", OPTIONS],
+	["Panel 14", $"Panel 14", TRANSITION]
 	]
 	play()
 	

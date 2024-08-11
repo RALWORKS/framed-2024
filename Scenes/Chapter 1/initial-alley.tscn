@@ -1,4 +1,4 @@
-[gd_scene load_steps=25 format=3 uid="uid://n3ps665svqra"]
+[gd_scene load_steps=30 format=3 uid="uid://n3ps665svqra"]
 
 [ext_resource type="Script" path="res://Scripts/Chapter 1/initial-alley/initial-alley.gd" id="1_kd3uj"]
 [ext_resource type="Texture2D" uid="uid://ks6ltpyibhaw" path="res://Assets/Initial_alley_background_only.png" id="2_cyom3"]
@@ -10,6 +10,9 @@
 [ext_resource type="PackedScene" uid="uid://d4cbyalgs01x8" path="res://Assets/Dialogue/dialogue_box.tscn" id="7_33j4g"]
 [ext_resource type="PackedScene" uid="uid://dlqm5dgeomybm" path="res://Assets/Dialogue/button.tscn" id="9_ursd0"]
 [ext_resource type="Texture2D" uid="uid://bw0n5w5nx5and" path="res://Assets/Initial_alley_01.png" id="10_gn18g"]
+[ext_resource type="Texture2D" uid="uid://2a2rvrhmkrbl" path="res://Assets/initial-alley_bus_ticket.png" id="11_ji2kj"]
+[ext_resource type="Texture2D" uid="uid://dvba2v7f0yidm" path="res://Assets/Dorian_3qrtr_close_angry.png" id="12_kkf28"]
+[ext_resource type="Texture2D" uid="uid://ccraeuksisrrj" path="res://Assets/Dorian_hand_for_chin.png" id="13_ysn8f"]
 
 [sub_resource type="Animation" id="Animation_wrvmk"]
 resource_name = "Scene 1"
@@ -24,6 +27,69 @@ tracks/0/keys = {
 "transitions": PackedFloat32Array(1, 1, 1),
 "update": 0,
 "values": [Vector2(2241, 207), Vector2(2241, 207), Vector2(360, 207)]
+}
+
+[sub_resource type="Animation" id="Animation_gsdn7"]
+resource_name = "Panel 10"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Panel 10/BG:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.4),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(257, 814), Vector2(915, 438)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Panel 10/BG:scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.4),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1.03924, 1.03924), Vector2(0.681192, 0.681192)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Panel 10/StreetSign10:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.4),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(142, 184), Vector2(935, 25)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Panel 10/StreetSign10:scale")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 0.4),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(0.793518, 0.793519), Vector2(0.50463, 0.50463)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Panel 10/Dialogue10:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0, 0.6, 1),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(248, 1224), Vector2(248, 1224), Vector2(1456, 1224)]
 }
 
 [sub_resource type="Animation" id="Animation_m8tvq"]
@@ -892,7 +958,7 @@ tracks/28/keys = {
 tracks/29/type = "value"
 tracks/29/imported = false
 tracks/29/enabled = true
-tracks/29/path = NodePath("Panel 10/StreetSign6:position")
+tracks/29/path = NodePath("Panel 10/StreetSign10:position")
 tracks/29/interp = 1
 tracks/29/loop_wrap = true
 tracks/29/keys = {
@@ -904,7 +970,7 @@ tracks/29/keys = {
 tracks/30/type = "value"
 tracks/30/imported = false
 tracks/30/enabled = true
-tracks/30/path = NodePath("Panel 10/StreetSign6:scale")
+tracks/30/path = NodePath("Panel 10/StreetSign10:scale")
 tracks/30/interp = 1
 tracks/30/loop_wrap = true
 tracks/30/keys = {
@@ -925,74 +991,139 @@ tracks/31/keys = {
 "update": 0,
 "values": [Vector2(1456, 1224)]
 }
+tracks/32/type = "value"
+tracks/32/imported = false
+tracks/32/enabled = true
+tracks/32/path = NodePath("Panel 12/Dialogue12:modulate")
+tracks/32/interp = 1
+tracks/32/loop_wrap = true
+tracks/32/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/33/type = "value"
+tracks/33/imported = false
+tracks/33/enabled = true
+tracks/33/path = NodePath("Panel 14/DoreanHand14:position")
+tracks/33/interp = 1
+tracks/33/loop_wrap = true
+tracks/33/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(816, 48)]
+}
+tracks/34/type = "value"
+tracks/34/imported = false
+tracks/34/enabled = true
+tracks/34/path = NodePath("Panel 14/Dorean14:position")
+tracks/34/interp = 1
+tracks/34/loop_wrap = true
+tracks/34/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(768, 2.85596)]
+}
+tracks/35/type = "value"
+tracks/35/imported = false
+tracks/35/enabled = true
+tracks/35/path = NodePath("Panel 14/DoreanHand14:rotation")
+tracks/35/interp = 1
+tracks/35/loop_wrap = true
+tracks/35/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [-0.0404813]
+}
+tracks/36/type = "value"
+tracks/36/imported = false
+tracks/36/enabled = true
+tracks/36/path = NodePath("Panel 14/Dialogue14:position")
+tracks/36/interp = 1
+tracks/36/loop_wrap = true
+tracks/36/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1456, 1224)]
+}
 
-[sub_resource type="Animation" id="Animation_gsdn7"]
-resource_name = "Panel 10"
+[sub_resource type="Animation" id="Animation_paerh"]
+resource_name = "Panel 12"
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("Panel 10/BG:position")
+tracks/0/path = NodePath("Panel 12/Dialogue12:modulate")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.4),
+"times": PackedFloat32Array(0, 0.6),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [Vector2(257, 814), Vector2(915, 438)]
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_20utx"]
+resource_name = "Panel 14"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Panel 14/DoreanHand14:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.6),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(816, 48), Vector2(-415, 48)]
 }
 tracks/1/type = "value"
 tracks/1/imported = false
 tracks/1/enabled = true
-tracks/1/path = NodePath("Panel 10/BG:scale")
+tracks/1/path = NodePath("Panel 14/Dorean14:position")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
-"times": PackedFloat32Array(0, 0.4),
+"times": PackedFloat32Array(0, 0.6),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [Vector2(1.03924, 1.03924), Vector2(0.681192, 0.681192)]
+"values": [Vector2(768, 2.85596), Vector2(-436.072, 2.85596)]
 }
 tracks/2/type = "value"
 tracks/2/imported = false
 tracks/2/enabled = true
-tracks/2/path = NodePath("Panel 10/StreetSign6:position")
+tracks/2/path = NodePath("Panel 14/DoreanHand14:rotation")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/keys = {
-"times": PackedFloat32Array(0, 0.4),
+"times": PackedFloat32Array(0, 0.6),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [Vector2(142, 184), Vector2(935, 25)]
+"values": [0.0855211, -0.0404813]
 }
 tracks/3/type = "value"
 tracks/3/imported = false
 tracks/3/enabled = true
-tracks/3/path = NodePath("Panel 10/StreetSign6:scale")
+tracks/3/path = NodePath("Panel 14/Dialogue14:position")
 tracks/3/interp = 1
 tracks/3/loop_wrap = true
 tracks/3/keys = {
-"times": PackedFloat32Array(0, 0.4),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Vector2(0.793518, 0.793519), Vector2(0.50463, 0.50463)]
-}
-tracks/4/type = "value"
-tracks/4/imported = false
-tracks/4/enabled = true
-tracks/4/path = NodePath("Panel 10/Dialogue10:position")
-tracks/4/interp = 1
-tracks/4/loop_wrap = true
-tracks/4/keys = {
 "times": PackedFloat32Array(0, 0.6, 1),
 "transitions": PackedFloat32Array(1, 1, 1),
 "update": 0,
-"values": [Vector2(248, 1224), Vector2(248, 1224), Vector2(1456, 1224)]
+"values": [Vector2(1456, 1224), Vector2(1456, 1224), Vector2(1456, 280)]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_duj7y"]
 _data = {
 "Panel 1": SubResource("Animation_wrvmk"),
 "Panel 10": SubResource("Animation_gsdn7"),
+"Panel 12": SubResource("Animation_paerh"),
+"Panel 14": SubResource("Animation_20utx"),
 "Panel 2": SubResource("Animation_m8tvq"),
 "Panel 3": SubResource("Animation_0i2cu"),
 "Panel 4a": SubResource("Animation_jks75"),
@@ -1280,6 +1411,7 @@ offset_top = 390.0
 offset_right = 1118.0
 offset_bottom = 493.0
 text = "Who have I killed?"
+to_index = 16
 
 [node name="WhyamIatMarbury" parent="Panel 9" instance=ExtResource("9_ursd0")]
 offset_left = 631.0
@@ -1298,7 +1430,7 @@ scale = Vector2(1.03924, 1.03924)
 texture = ExtResource("10_gn18g")
 metadata/_edit_use_anchors_ = true
 
-[node name="StreetSign6" type="Sprite2D" parent="Panel 10"]
+[node name="StreetSign10" type="Sprite2D" parent="Panel 10"]
 position = Vector2(142, 184)
 scale = Vector2(0.793518, 0.793519)
 texture = ExtResource("5_8wlly")
@@ -1316,6 +1448,7 @@ text = "DORIAN
 Why am I at Marbury and 3rd? I have no reason to be in this part of town."
 
 [node name="Panel 11" type="Node2D" parent="."]
+visible = false
 
 [node name="BG" type="Sprite2D" parent="Panel 11"]
 position = Vector2(915, 438)
@@ -1323,7 +1456,7 @@ scale = Vector2(0.681192, 0.681192)
 texture = ExtResource("10_gn18g")
 metadata/_edit_use_anchors_ = true
 
-[node name="StreetSign6" type="Sprite2D" parent="Panel 11"]
+[node name="StreetSign11" type="Sprite2D" parent="Panel 11"]
 position = Vector2(935, 25)
 scale = Vector2(0.50463, 0.50463)
 texture = ExtResource("5_8wlly")
@@ -1332,7 +1465,7 @@ centered = false
 [node name="Dialogue11" type="Node2D" parent="Panel 11"]
 position = Vector2(1456, 1224)
 
-[node name="DorianDialogue10" parent="Panel 11/Dialogue11" instance=ExtResource("7_33j4g")]
+[node name="DorianDialogue11" parent="Panel 11/Dialogue11" instance=ExtResource("7_33j4g")]
 offset_left = -1092.0
 offset_top = -836.0
 offset_right = -342.0
@@ -1346,6 +1479,7 @@ offset_top = 705.0
 offset_right = 981.0
 offset_bottom = 806.0
 text = "What's in my pockets?"
+to_index = 14
 
 [node name="WhoHaveIKilled" parent="Panel 11" instance=ExtResource("9_ursd0")]
 offset_left = 1065.0
@@ -1353,3 +1487,122 @@ offset_top = 704.0
 offset_right = 1467.0
 offset_bottom = 807.0
 text = "Who have I killed?"
+to_index = 16
+
+[node name="Panel 12" type="Node2D" parent="."]
+visible = false
+
+[node name="BlackScreen12" type="ColorRect" parent="Panel 12"]
+offset_right = 1920.0
+offset_bottom = 1080.0
+color = Color(0, 0, 0, 1)
+
+[node name="Ticket12" type="Sprite2D" parent="Panel 12"]
+position = Vector2(976, 248)
+scale = Vector2(0.692593, 0.692593)
+texture = ExtResource("11_ji2kj")
+
+[node name="Dialogue12" type="Node2D" parent="Panel 12"]
+position = Vector2(1472, 1064)
+
+[node name="DorianDialogue12" parent="Panel 12/Dialogue12" instance=ExtResource("7_33j4g")]
+offset_left = -872.0
+offset_top = -504.0
+offset_right = -100.0
+offset_bottom = -260.0
+text = "DORIAN
+Why do I have a bus ticket? I'll drive, cab, or walk, but I don't bus.
+
+It's dated for 2AM last night."
+
+[node name="Panel 13" type="Node2D" parent="."]
+visible = false
+
+[node name="BlackScreen13" type="ColorRect" parent="Panel 13"]
+offset_right = 1920.0
+offset_bottom = 1080.0
+color = Color(0, 0, 0, 1)
+
+[node name="Ticket" type="Sprite2D" parent="Panel 13"]
+position = Vector2(976, 248)
+scale = Vector2(0.692593, 0.692593)
+texture = ExtResource("11_ji2kj")
+
+[node name="Dialogue13" type="Node2D" parent="Panel 13"]
+position = Vector2(1472, 1064)
+
+[node name="DorianDialogue13" parent="Panel 13/Dialogue13" instance=ExtResource("7_33j4g")]
+offset_left = -872.0
+offset_top = -504.0
+offset_right = -100.0
+offset_bottom = -260.0
+text = "DORIAN
+Why do I have a bus ticket? I'll drive, cab, or walk, but I don't bus.
+
+It's dated for 2AM last night."
+
+[node name="Done" parent="Panel 13" instance=ExtResource("9_ursd0")]
+offset_left = 792.0
+offset_top = 840.0
+offset_right = 1194.0
+offset_bottom = 943.0
+text = "Done"
+to_index = 13
+
+[node name="Panel 14" type="Node2D" parent="."]
+
+[node name="BG" type="Sprite2D" parent="Panel 14"]
+position = Vector2(0, 1065)
+texture = ExtResource("2_cyom3")
+metadata/_edit_use_anchors_ = true
+
+[node name="Dorean14" type="Sprite2D" parent="Panel 14"]
+position = Vector2(768, 2.85596)
+texture = ExtResource("12_kkf28")
+centered = false
+
+[node name="DoreanHand14" type="Sprite2D" parent="Panel 14"]
+position = Vector2(816, 48)
+rotation = -0.0404813
+texture = ExtResource("13_ysn8f")
+centered = false
+
+[node name="Dialogue14" type="Node2D" parent="Panel 14"]
+position = Vector2(1456, 1224)
+
+[node name="DorianDialogue14" parent="Panel 14/Dialogue14" instance=ExtResource("7_33j4g")]
+offset_left = -520.0
+offset_top = -112.0
+offset_right = 360.0
+offset_bottom = 104.0
+text = "DORIAN
+Who would I have killed? Maybe I should call Marie back and ask her who's supposed to be dead."
+
+[node name="Panel 15" type="Node2D" parent="."]
+
+[node name="BG" type="Sprite2D" parent="Panel 15"]
+position = Vector2(0, 1065)
+texture = ExtResource("2_cyom3")
+metadata/_edit_use_anchors_ = true
+
+[node name="Dorean14" type="Sprite2D" parent="Panel 15"]
+position = Vector2(-436.072, 2.85596)
+texture = ExtResource("12_kkf28")
+centered = false
+
+[node name="DoreanHand14" type="Sprite2D" parent="Panel 15"]
+position = Vector2(-415, 48)
+rotation = -0.0404813
+texture = ExtResource("13_ysn8f")
+centered = false
+
+[node name="Dialogue14" type="Node2D" parent="Panel 15"]
+position = Vector2(1456, 280)
+
+[node name="DorianDialogue14" parent="Panel 15/Dialogue14" instance=ExtResource("7_33j4g")]
+offset_left = -520.0
+offset_top = -112.0
+offset_right = 360.0
+offset_bottom = 104.0
+text = "DORIAN
+Who would I have killed? Maybe I should call Marie back and ask her who's supposed to be dead."
