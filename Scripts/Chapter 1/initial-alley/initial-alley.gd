@@ -1,47 +1,5 @@
 extends Node2D
 
-# "initial-alley": Alley
-
-"""
-DORIAN stands in an alley doorway, phone held up to his ear.
-
-MARIE's voice yells from the phone speaker.
-
-MARIE (telephone): Just come home, Dorian. This is too much, even for you. I know he screwed you over, but you can't--you can't just--
-
-DORIAN: Marie. Slow down. I didn't kill anybody for God's sake.
-
-DIP TO BLACK FOR VOICE OVER DORIAN (VO): Did I?
-
-DORIAN (to Marie): Tell me just what it is you think is going on.
-
-MARIE (telephone): If you didn't do it, then you have nothing to hide. You can turn yourself in. Where are you? I'll come pick you up. We can drive to the station together--
-
-DORIAN: Marie. Stop. What's going on?
-
-MARIE (telephone): Where are you, Dorian? What did you do? What did you--
-
-Dorian hangs up.
-
-DORIAN: Damnit.
-
-DORIAN (to himself): Where am I?
-
-He glances around for a street sign; catches sight of one.
-
-DORIAN: Marbury and 3rd, seems like. Christ. I need to stop drinking.
-
-DORIAN: And what have I done?
-
-Dorian looks at a spot of blood on the cuff of his sleeve.
-
-DIP TO BLACK
-
-DORIAN (VO): Murder?
-
-DORIAN (VO): After the year I've had, I ... wouldn't put it past myself.
-"""
-
 # Animation Player
 @onready var anim_play = $AnimationPlayer
 
