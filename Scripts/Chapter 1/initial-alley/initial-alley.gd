@@ -44,6 +44,42 @@ DORIAN (VO): After the year I've had, I ... wouldn't put it past myself.
 
 
 # Variables
+var panel_count = 0
+
+var dict = {
+	"panel1": {
+		"next": "panel2",
+		"animations": ["Panel 1"]
+	},
+	"panel2": {
+		"next": "panel3",
+		"animations": ["Panel 2"]
+	},
+	"panel3": {
+		"next": "panel4",
+		"animations": ["Panel 3"]
+	},
+	"panel4": {
+		"next": "panel5",
+		"animations": ["Panel 4a", "Panel 4b", "Panel 4c", "Panel 4d"]
+	},
+	"panel5": {
+		"next": "panel6",
+		"animations": ["Panel 5"]
+	},
+	"panel6": {
+		"next": "panel7",
+		"animations": ["Panel 6"]
+	},
+	"panel7": {
+		"next": "panel8",
+		"animations": ["Panel 7"]
+	},
+	"panel8": {
+		"next": null,
+		"animations": ["Panel 8"]
+	},
+}
 
 # Animation Player
 @onready var anim_play = $AnimationPlayer

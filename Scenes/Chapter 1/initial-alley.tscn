@@ -693,7 +693,6 @@ theme_override_font_sizes/normal_font_size = 80
 text = "Did I?"
 
 [node name="Panel 4" type="Node2D" parent="."]
-visible = false
 
 [node name="MariePhone4" type="Sprite2D" parent="Panel 4"]
 position = Vector2(-392, 344)
@@ -702,6 +701,7 @@ texture = ExtResource("6_fmysh")
 centered = false
 
 [node name="Dialogue4a" type="Node2D" parent="Panel 4"]
+visible = false
 position = Vector2(520, 288)
 
 [node name="DorianDialogue4a" parent="Panel 4/Dialogue4a" instance=ExtResource("7_33j4g")]
@@ -713,6 +713,7 @@ text = "DORIAN
 Tell me just what it is you think is going on."
 
 [node name="Dialogue4b" type="Node2D" parent="Panel 4"]
+visible = false
 position = Vector2(-712, 648)
 
 [node name="MarieDialogue4b" parent="Panel 4/Dialogue4b" instance=ExtResource("7_33j4g")]
@@ -724,6 +725,7 @@ text = "MARIE
 If you didn't do it, then you have nothing to hide. You can turn yourself in. Where are you? I'll come pick you up. We can drive to the station together--"
 
 [node name="Dialogue4c" type="Node2D" parent="Panel 4"]
+visible = false
 position = Vector2(2464, 200)
 
 [node name="DorianDialogue4c" parent="Panel 4/Dialogue4c" instance=ExtResource("7_33j4g")]
