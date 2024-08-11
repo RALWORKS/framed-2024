@@ -19,7 +19,7 @@ func _ready():
 	#anim_play.play("Panel 1")
 	
 	sequence = [
-		["1a", $"1"],
+		["1a", $"1", CALM],
 		[null, $"2", OPTIONS],
 		["3a", $"3"],
 		[null, $"4", OPTIONS],
