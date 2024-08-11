@@ -7,42 +7,69 @@ DORIAN stands in an alley doorway, phone held up to his ear.
 
 MARIE's voice yells from the phone speaker.
 
-MARIE (telephone): Just come home! God, Dorian, whatever 
-happened--whatever you did just tell me where you are! 
-I'll come I'll help you! I'll--
+MARIE (telephone): Just come home, Dorian. This is too much, even for you. I know he screwed you over, but you can't--you can't just--
+
+DORIAN: Marie. Slow down. I didn't kill anybody for God's sake.
+
+DIP TO BLACK FOR VOICE OVER DORIAN (VO): Did I?
+
+DORIAN (to Marie): Tell me just what it is you think is going on.
+
+MARIE (telephone): If you didn't do it, then you have nothing to hide. You can turn yourself in. Where are you? I'll come pick you up. We can drive to the station together--
+
+DORIAN: Marie. Stop. What's going on?
+
+MARIE (telephone): Where are you, Dorian? What did you do? What did you--
 
 Dorian hangs up.
 
-DORIAN (to himself): Where I am--
+DORIAN: Damnit.
+
+DORIAN (to himself): Where am I?
 
 He glances around for a street sign; catches sight of one.
 
 DORIAN: Marbury and 3rd, seems like. Christ. I need to stop drinking.
 
-DORIAN: What I did--
+DORIAN: And what have I done?
+
+Dorian looks at a spot of blood on the cuff of his sleeve.
 
 DIP TO BLACK
 
-VO: I have no idea. But it sounds like I've been framed for 
-murder.
+DORIAN (VO): Murder?
 
-Options - "Who would I have killed?" --> 
-"initial-alley-who-did-i-kill" "Why am I at Marbury and 3rd?" 
---> "why-marbury-and-3rd"
+DORIAN (VO): After the year I've had, I ... wouldn't put it past myself.
 """
 
-@onready var bg = $AlleyBackground
-@onready var phone = $Phone
-@onready var blur = $Blur
-@onready var marbury_sign = $MarburySign
-@onready var dorain_right = $DorainRightPhone
+# Variables
+
+var slide_count = 0
+
+# Sprites
+@onready var dorean_blank = $DoreanBlank
+@onready var dorean_confused = $DoreanConfused
+@onready var dorean_phone_hand = $DoreanPhoneHand
+@onready var street_sign = $StreetSign
+@onready var marie_phone = $MariePhone
+
+# Dialogue Boxes
+@onready var marie_1 = $MarieDialogue1
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	blur.visible = false
 	
-	# fade in with scenario
+	# when scene starts - need to hide stuff
+	dorean_blank.visible = false
+	dorean_confused.visible = false
+	dorean_phone_hand.visible = false
+	street_sign.visible = false
+	marie_1.visible = false
+	marie_phone.visible = true
 	
 	pass # Replace with function body.
 
 
+func _process(delta):
+	if Input.is_action_just_released("Next"):
+		slide_count += 1

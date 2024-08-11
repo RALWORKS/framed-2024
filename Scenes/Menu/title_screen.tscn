@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://dm3e78qgxuweh"]
+[gd_scene load_steps=4 format=3 uid="uid://dm3e78qgxuweh"]
 
 [ext_resource type="Script" path="res://Scripts/title_screen.gd" id="1_6isyv"]
 [ext_resource type="FontFile" uid="uid://bmxov1aoclv2k" path="res://Assets/Fonts/Courier New.ttf" id="2_pm5pl"]
+[ext_resource type="PackedScene" uid="uid://dlqm5dgeomybm" path="res://Assets/Dialogue/button.tscn" id="3_wss4s"]
 
 [node name="Title Screen" type="Control"]
 layout_mode = 3
@@ -15,42 +16,39 @@ offset_right = 1152.0
 offset_bottom = 647.0
 color = Color(0, 0, 0, 1)
 
-[node name="RichTextLabel" type="RichTextLabel" parent="."]
-layout_mode = 0
-offset_left = 128.0
-offset_top = 128.0
-offset_right = 513.0
-offset_bottom = 243.0
-theme_override_fonts/normal_font = ExtResource("2_pm5pl")
-theme_override_font_sizes/normal_font_size = 100
-text = "Framed"
-
 [node name="Control" type="Control" parent="."]
 anchors_preset = 0
-offset_right = 40.0
-offset_bottom = 40.0
+offset_left = 388.624
+offset_top = 229.699
+offset_right = 734.624
+offset_bottom = 536.699
+metadata/_edit_group_ = true
 
-[node name="PlayButton" type="Button" parent="Control"]
+[node name="Play-Button" parent="Control" instance=ExtResource("3_wss4s")]
 layout_mode = 0
-offset_left = 373.0
-offset_top = 315.0
-offset_right = 518.0
-offset_bottom = 388.0
-theme_override_colors/font_color = Color(1, 1, 1, 1)
-theme_override_fonts/font = ExtResource("2_pm5pl")
-theme_override_font_sizes/font_size = 30
+offset_left = 38.4262
+offset_top = 43.232
+offset_right = 294.426
+offset_bottom = 107.232
 text = "Play"
 
-[node name="QuitButton" type="Button" parent="Control"]
+[node name="Quit-Button" parent="Control" instance=ExtResource("3_wss4s")]
 layout_mode = 0
-offset_left = 372.0
-offset_top = 450.0
-offset_right = 514.0
-offset_bottom = 515.0
-theme_override_colors/font_color = Color(1, 1, 1, 1)
-theme_override_fonts/font = ExtResource("2_pm5pl")
-theme_override_font_sizes/font_size = 30
+offset_left = 38.4262
+offset_top = 163.036
+offset_right = 294.426
+offset_bottom = 227.036
 text = "Quit"
 
-[connection signal="pressed" from="Control/PlayButton" to="." method="_on_play_button_pressed"]
-[connection signal="pressed" from="Control/QuitButton" to="." method="_on_quit_button_pressed"]
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+layout_mode = 0
+offset_left = 76.804
+offset_top = 115.012
+offset_right = 489.804
+offset_bottom = 192.012
+theme_override_fonts/normal_font = ExtResource("2_pm5pl")
+theme_override_font_sizes/normal_font_size = 50
+text = "Marbury & 3rd"
+
+[connection signal="pressed" from="Control/Play-Button" to="." method="_on_play_button_pressed"]
+[connection signal="pressed" from="Control/Quit-Button" to="." method="_on_quit_button_pressed"]

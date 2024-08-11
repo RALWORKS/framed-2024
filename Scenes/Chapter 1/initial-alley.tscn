@@ -1,6 +1,12 @@
-[gd_scene load_steps=4 format=3 uid="uid://n3ps665svqra"]
+[gd_scene load_steps=10 format=3 uid="uid://n3ps665svqra"]
 
 [ext_resource type="Script" path="res://Scripts/Chapter 1/initial-alley/initial-alley.gd" id="1_kd3uj"]
+[ext_resource type="Texture2D" uid="uid://kk1umvxxppwt" path="res://Assets/Chapter 1/initial-alley/Dorian_3qrtr_close_blank.png" id="2_f6xsi"]
+[ext_resource type="Texture2D" uid="uid://b5qu8ics07up3" path="res://Assets/Chapter 1/initial-alley/Dorian_3qrtr_close_confused.png" id="3_ey63g"]
+[ext_resource type="Texture2D" uid="uid://1cq7arrcntf0" path="res://Assets/Chapter 1/initial-alley/Dorian_3qrtr_close_phonehand.png" id="4_rk45k"]
+[ext_resource type="Texture2D" uid="uid://y5j0g1se5stw" path="res://Assets/Chapter 1/initial-alley/Marbury and 3rd sign.png" id="5_8wlly"]
+[ext_resource type="Texture2D" uid="uid://c2vngb7uq2uhw" path="res://Assets/Chapter 1/initial-alley/Phone_marie.png" id="6_fmysh"]
+[ext_resource type="PackedScene" uid="uid://d4cbyalgs01x8" path="res://Assets/Dialogue/dialogue_box.tscn" id="7_33j4g"]
 
 [sub_resource type="Animation" id="Animation_we10a"]
 resource_name = "dorainrightphone"
@@ -13,45 +19,44 @@ _data = {
 [node name="Initial-alley" type="Node2D"]
 script = ExtResource("1_kd3uj")
 
-[node name="AlleyBackground" type="ColorRect" parent="."]
+[node name="temp bg" type="ColorRect" parent="."]
 offset_right = 1920.0
 offset_bottom = 1080.0
-color = Color(0.298039, 0.329412, 0.866667, 1)
-
-[node name="DorainRightPhone" type="ColorRect" parent="."]
-offset_left = 96.0
-offset_top = 56.0
-offset_right = 840.0
-offset_bottom = 936.0
-color = Color(0.988235, 0.133333, 0.858824, 1)
-
-[node name="Phone" type="ColorRect" parent="."]
-offset_left = 992.0
-offset_top = 56.0
-offset_right = 1256.0
-offset_bottom = 456.0
-scale = Vector2(2.41663, 2.41663)
-color = Color(0.187176, 0.187176, 0.187176, 1)
-
-[node name="Screen" type="ColorRect" parent="Phone"]
-offset_left = 16.0
-offset_top = 16.0
-offset_right = 248.0
-offset_bottom = 360.0
-
-[node name="Blur" type="ColorRect" parent="."]
-offset_right = 1920.0
-offset_bottom = 1080.0
-color = Color(0, 0.0117647, 0, 0.690196)
-
-[node name="MarburySign" type="ColorRect" parent="."]
-offset_left = 1176.0
-offset_top = 128.0
-offset_right = 1792.0
-offset_bottom = 360.0
-color = Color(0.266667, 0.756863, 0.298039, 1)
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {
 "": SubResource("AnimationLibrary_duj7y")
 }
+
+[node name="DoreanPhoneHand" type="Sprite2D" parent="."]
+position = Vector2(-64, 360)
+rotation = -0.241323
+texture = ExtResource("4_rk45k")
+centered = false
+
+[node name="DoreanBlank" type="Sprite2D" parent="."]
+texture = ExtResource("2_f6xsi")
+centered = false
+
+[node name="DoreanConfused" type="Sprite2D" parent="."]
+visible = false
+texture = ExtResource("3_ey63g")
+centered = false
+
+[node name="StreetSign" type="Sprite2D" parent="."]
+visible = false
+texture = ExtResource("5_8wlly")
+centered = false
+
+[node name="MariePhone" type="Sprite2D" parent="."]
+visible = false
+texture = ExtResource("6_fmysh")
+centered = false
+
+[node name="MarieDialogue1" parent="." instance=ExtResource("7_33j4g")]
+offset_left = 1352.0
+offset_top = 32.0
+offset_right = 1888.0
+offset_bottom = 344.0
+text = "MARIE
+Just come home, Dorian. This is too much, even for you. I know he screwed you over, but you can't--you can't just--"
