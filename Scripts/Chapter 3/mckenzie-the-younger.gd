@@ -43,6 +43,10 @@ func _ready():
 		[null, $"22"],
 		[null, $"23"],
 		[null, $"24", OPTIONS],
+		[null, $"25"],
+		[null, $"26"],
+		["27a", $"27"],
+		["11a", $"11", END, HORROR],
 	]
 	play()
 	

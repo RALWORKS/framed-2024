@@ -1,4 +1,4 @@
-[gd_scene load_steps=22 format=3 uid="uid://byyy1gvkr02b0"]
+[gd_scene load_steps=23 format=3 uid="uid://byyy1gvkr02b0"]
 
 [ext_resource type="Script" path="res://Scripts/Chapter 3/mckenzie-the-younger.gd" id="1_qnkf3"]
 [ext_resource type="Texture2D" uid="uid://bw0n5w5nx5and" path="res://Assets/Initial_alley_01.png" id="2_2agux"]
@@ -328,6 +328,18 @@ tracks/22/keys = {
 "update": 0,
 "values": [Vector2(-269, 100)]
 }
+tracks/23/type = "value"
+tracks/23/imported = false
+tracks/23/enabled = true
+tracks/23/path = NodePath("27/bg:position")
+tracks/23/interp = 1
+tracks/23/loop_wrap = true
+tracks/23/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-403, 170)]
+}
 
 [sub_resource type="Animation" id="Animation_rqpad"]
 resource_name = "3a"
@@ -593,12 +605,28 @@ tracks/0/keys = {
 "values": [Vector2(-269, 100), Vector2(702, 722)]
 }
 
+[sub_resource type="Animation" id="Animation_evwdb"]
+resource_name = "27a"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("27/bg:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(-403, 170), Vector2(850, 685)]
+}
+
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_n4xwd"]
 _data = {
 "10a": SubResource("Animation_qls8s"),
 "11a": SubResource("Animation_3bgf0"),
 "18a": SubResource("Animation_qnp3h"),
 "1a": SubResource("Animation_cs7na"),
+"27a": SubResource("Animation_evwdb"),
 "3a": SubResource("Animation_rqpad"),
 "5a": SubResource("Animation_ov6yx"),
 "7a": SubResource("Animation_1wqx1"),
@@ -1168,7 +1196,7 @@ Uh oh ..."
 visible = false
 
 [node name="bg" type="Sprite2D" parent="18"]
-position = Vector2(702, 722)
+position = Vector2(-269, 100)
 scale = Vector2(2, 2)
 texture = ExtResource("2_2agux")
 
@@ -1345,4 +1373,83 @@ offset_left = 332.0
 offset_top = 175.0
 offset_right = 1182.0
 offset_bottom = 239.0
-text = "\"Tell me everything you know.\""
+text = "\"Framed? Tell me everything you know.\""
+to_index = 25
+
+[node name="25" type="Node2D" parent="."]
+
+[node name="bg" type="Sprite2D" parent="25"]
+position = Vector2(-403, 170)
+scale = Vector2(2, 2)
+texture = ExtResource("2_2agux")
+
+[node name="man" type="Sprite2D" parent="25/bg"]
+position = Vector2(1176, 314)
+scale = Vector2(0.7, 0.7)
+texture = ExtResource("4_uls6k")
+flip_h = true
+
+[node name="dorian" type="Sprite2D" parent="25/bg"]
+position = Vector2(116.667, 250)
+texture = ExtResource("3_3m0rl")
+
+[node name="Dialogue Box" parent="25" instance=ExtResource("5_c5ymi")]
+offset_left = 413.0
+offset_top = 294.0
+offset_right = 1034.0
+offset_bottom = 486.0
+text = "HOMELESS MAN:
+
+Like I said--I saw them drag you up the stairs to him and--"
+
+[node name="Dialogue Box2" parent="25" instance=ExtResource("5_c5ymi")]
+offset_left = 972.0
+offset_top = 543.0
+offset_right = 1101.0
+offset_bottom = 634.0
+text = "..."
+
+[node name="26" type="Node2D" parent="."]
+
+[node name="bg" type="Sprite2D" parent="26"]
+position = Vector2(-403, 170)
+scale = Vector2(2, 2)
+texture = ExtResource("2_2agux")
+
+[node name="man" type="Sprite2D" parent="26/bg"]
+position = Vector2(1176, 314)
+scale = Vector2(0.7, 0.7)
+texture = ExtResource("4_uls6k")
+flip_h = true
+
+[node name="dorian" type="Sprite2D" parent="26/bg"]
+position = Vector2(116.667, 250)
+texture = ExtResource("3_3m0rl")
+
+[node name="Dialogue Box" parent="26" instance=ExtResource("5_c5ymi")]
+offset_left = 287.0
+offset_top = 45.0
+offset_right = 609.0
+offset_bottom = 143.0
+text = "DORIAN: What?"
+
+[node name="27" type="Node2D" parent="."]
+
+[node name="bg" type="Sprite2D" parent="27"]
+position = Vector2(850, 685)
+scale = Vector2(2, 2)
+texture = ExtResource("2_2agux")
+
+[node name="man" type="Sprite2D" parent="27/bg"]
+position = Vector2(1176, 314)
+scale = Vector2(0.7, 0.7)
+texture = ExtResource("4_uls6k")
+flip_h = true
+
+[node name="cop" type="Sprite2D" parent="27/bg"]
+position = Vector2(198.5, 219.5)
+texture = ExtResource("8_1382f")
+
+[node name="dorian" type="Sprite2D" parent="27/bg"]
+position = Vector2(116.667, 250)
+texture = ExtResource("3_3m0rl")
