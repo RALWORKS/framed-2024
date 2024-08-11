@@ -1,4 +1,4 @@
-[gd_scene load_steps=20 format=3 uid="uid://byyy1gvkr02b0"]
+[gd_scene load_steps=21 format=3 uid="uid://byyy1gvkr02b0"]
 
 [ext_resource type="Script" path="res://Scripts/Chapter 3/mckenzie-the-younger.gd" id="1_qnkf3"]
 [ext_resource type="Texture2D" uid="uid://bw0n5w5nx5and" path="res://Assets/Initial_alley_01.png" id="2_2agux"]
@@ -315,6 +315,18 @@ tracks/21/keys = {
 "update": 0,
 "values": [Vector2(0.6, 0.6)]
 }
+tracks/22/type = "value"
+tracks/22/imported = false
+tracks/22/enabled = true
+tracks/22/path = NodePath("18/bg:position")
+tracks/22/interp = 1
+tracks/22/loop_wrap = true
+tracks/22/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-269, 100)]
+}
 
 [sub_resource type="Animation" id="Animation_rqpad"]
 resource_name = "3a"
@@ -565,10 +577,26 @@ tracks/5/keys = {
 "values": [Vector2(0.6, 0.6), Vector2(1.5, 1.5)]
 }
 
+[sub_resource type="Animation" id="Animation_qnp3h"]
+resource_name = "18a"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("18/bg:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(-269, 100), Vector2(702, 722)]
+}
+
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_n4xwd"]
 _data = {
 "10a": SubResource("Animation_qls8s"),
 "11a": SubResource("Animation_3bgf0"),
+"18a": SubResource("Animation_qnp3h"),
 "1a": SubResource("Animation_cs7na"),
 "3a": SubResource("Animation_rqpad"),
 "5a": SubResource("Animation_ov6yx"),
@@ -717,6 +745,7 @@ offset_top = 260.0
 offset_right = 1510.0
 offset_bottom = 324.0
 text = "\"What happened?\""
+to_index = 11
 
 [node name="5" type="Node2D" parent="."]
 
@@ -854,6 +883,7 @@ offset_top = 260.0
 offset_right = 1510.0
 offset_bottom = 324.0
 text = "\"What did you see?\""
+to_index = 11
 
 [node name="9" type="Node2D" parent="."]
 
@@ -889,6 +919,7 @@ theme_override_styles/normal = SubResource("StyleBoxEmpty_pov63")
 text = "He's not expecting it."
 
 [node name="10" type="Node2D" parent="."]
+visible = false
 
 [node name="ColorRect" type="ColorRect" parent="10"]
 offset_right = 1945.0
@@ -906,10 +937,11 @@ theme_override_styles/normal = SubResource("StyleBoxEmpty_pov63")
 text = "A brick to the head is all it takes."
 
 [node name="11" type="Node2D" parent="."]
+visible = false
 
 [node name="bg" type="Sprite2D" parent="11"]
-position = Vector2(4435.39, 482.925)
-scale = Vector2(1.4372, 1.4372)
+position = Vector2(994, 524)
+scale = Vector2(1.5, 1.5)
 texture = ExtResource("2_2agux")
 
 [node name="cop" type="Sprite2D" parent="11/bg"]
@@ -917,8 +949,8 @@ scale = Vector2(0.8, 0.8)
 texture = ExtResource("8_1382f")
 
 [node name="bg2" type="Sprite2D" parent="11"]
-position = Vector2(-332.848, 524)
-scale = Vector2(1.4372, 1.4372)
+position = Vector2(-1307, 524)
+scale = Vector2(0.6, 0.6)
 texture = ExtResource("2_2agux")
 
 [node name="cop" type="Sprite2D" parent="11/bg2"]
@@ -943,10 +975,9 @@ theme_override_styles/normal = SubResource("StyleBoxEmpty_pov63")
 text = "He's not expecting it."
 
 [node name="dorian" type="Sprite2D" parent="11"]
-position = Vector2(997, 478.612)
+position = Vector2(997, 436)
 scale = Vector2(1.2, 1.2)
 texture = ExtResource("8_q6f05")
-flip_h = true
 
 [node name="Dialogue Box" parent="11" instance=ExtResource("5_c5ymi")]
 offset_left = 83.0
@@ -962,3 +993,181 @@ offset_top = 959.0
 offset_right = 705.0
 offset_bottom = 1046.0
 text = "Did that cop just see--?"
+
+[node name="12" type="Node2D" parent="."]
+
+[node name="bg" type="Sprite2D" parent="12"]
+position = Vector2(261, 424)
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("2_2agux")
+
+[node name="man" type="Sprite2D" parent="12/bg"]
+position = Vector2(1176, 314)
+scale = Vector2(0.7, 0.7)
+texture = ExtResource("4_uls6k")
+flip_h = true
+
+[node name="dorian" type="Sprite2D" parent="12/bg"]
+position = Vector2(116.667, 250)
+texture = ExtResource("3_3m0rl")
+
+[node name="Dialogue Box" parent="12" instance=ExtResource("5_c5ymi")]
+offset_left = 863.0
+offset_top = 159.0
+offset_right = 1782.0
+offset_bottom = 460.0
+text = "HOMELESS MAN:
+
+You were in no state to do anything when they brought you there son. I saw. Even when you stumbled back out all covered in blood, it was obvious. They're tryna get you outta the picture too, Lord knows why.
+"
+
+[node name="13" type="Node2D" parent="."]
+
+[node name="bg" type="Sprite2D" parent="13"]
+position = Vector2(261, 424)
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("2_2agux")
+
+[node name="man" type="Sprite2D" parent="13/bg"]
+position = Vector2(1176, 314)
+scale = Vector2(0.7, 0.7)
+texture = ExtResource("4_uls6k")
+flip_h = true
+
+[node name="dorian" type="Sprite2D" parent="13/bg"]
+position = Vector2(116.667, 250)
+texture = ExtResource("3_3m0rl")
+
+[node name="Dialogue Box" parent="13" instance=ExtResource("5_c5ymi")]
+offset_left = 863.0
+offset_top = 159.0
+offset_right = 1296.0
+offset_bottom = 288.0
+text = "DORIAN:
+Brought me where?"
+
+[node name="14" type="Node2D" parent="."]
+
+[node name="bg" type="Sprite2D" parent="14"]
+position = Vector2(261, 424)
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("2_2agux")
+
+[node name="man" type="Sprite2D" parent="14/bg"]
+position = Vector2(1176, 314)
+scale = Vector2(0.7, 0.7)
+texture = ExtResource("4_uls6k")
+flip_h = true
+
+[node name="dorian" type="Sprite2D" parent="14/bg"]
+position = Vector2(116.667, 250)
+texture = ExtResource("3_3m0rl")
+
+[node name="Dialogue Box" parent="14" instance=ExtResource("5_c5ymi")]
+offset_left = 905.0
+offset_top = 207.0
+offset_right = 1704.0
+offset_bottom = 516.0
+text = "HOMELESS MAN:
+
+To my brother's house. I've been hanging close by. He hates it when I do that, but I've been worried about him. He found out something he shouldn't have. So I watch his home in the night.
+"
+
+[node name="15" type="Node2D" parent="."]
+
+[node name="bg" type="Sprite2D" parent="15"]
+position = Vector2(261, 424)
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("2_2agux")
+
+[node name="man" type="Sprite2D" parent="15/bg"]
+position = Vector2(1176, 314)
+scale = Vector2(0.7, 0.7)
+texture = ExtResource("4_uls6k")
+flip_h = true
+
+[node name="dorian" type="Sprite2D" parent="15/bg"]
+position = Vector2(116.667, 250)
+texture = ExtResource("3_3m0rl")
+
+[node name="Dialogue Box" parent="15" instance=ExtResource("5_c5ymi")]
+offset_left = 837.0
+offset_top = 139.0
+offset_right = 1754.0
+offset_bottom = 522.0
+text = "HOMELESS MAN:
+
+They pull up with the car, yeah? I think 'this is it; he's gonna die.' So I start throwing rocks at the window, tryna wake him. And then I see they're dragging this limp body out of the car. I thought *he* was gonna be framed for *your* murder. But no, you're breathing still. Heavy, like. A real puzzler."
+
+[node name="16" type="Node2D" parent="."]
+
+[node name="bg" type="Sprite2D" parent="16"]
+position = Vector2(261, 424)
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("2_2agux")
+
+[node name="man" type="Sprite2D" parent="16/bg"]
+position = Vector2(1176, 314)
+scale = Vector2(0.7, 0.7)
+texture = ExtResource("4_uls6k")
+flip_h = true
+
+[node name="dorian" type="Sprite2D" parent="16/bg"]
+position = Vector2(116.667, 250)
+texture = ExtResource("3_3m0rl")
+
+[node name="Dialogue Box" parent="16" instance=ExtResource("5_c5ymi")]
+offset_left = 845.0
+offset_top = 195.0
+offset_right = 1762.0
+offset_bottom = 460.0
+text = "HOMELESS MAN:
+
+Until you stumbled out an hour later, bloody, saying there's a dead man and you don't know what to do. I told you: 'clean your hands in that puddle there, son, and then run."
+
+[node name="17" type="Node2D" parent="."]
+
+[node name="bg" type="Sprite2D" parent="17"]
+position = Vector2(-269, 100)
+scale = Vector2(2, 2)
+texture = ExtResource("2_2agux")
+
+[node name="man" type="Sprite2D" parent="17/bg"]
+position = Vector2(1176, 314)
+scale = Vector2(0.7, 0.7)
+texture = ExtResource("4_uls6k")
+flip_h = true
+
+[node name="dorian" type="Sprite2D" parent="17/bg"]
+position = Vector2(164.5, 245)
+texture = ExtResource("3_3m0rl")
+
+[node name="Dialogue Box" parent="17" instance=ExtResource("5_c5ymi")]
+offset_left = 511.0
+offset_top = 327.0
+offset_right = 1428.0
+offset_bottom = 506.0
+text = "HOMELESS MAN:
+
+Uh oh ..."
+
+[node name="18" type="Node2D" parent="."]
+
+[node name="bg" type="Sprite2D" parent="18"]
+position = Vector2(702, 722)
+scale = Vector2(2, 2)
+texture = ExtResource("2_2agux")
+
+[node name="man" type="Sprite2D" parent="18/bg"]
+position = Vector2(1176, 314)
+scale = Vector2(0.7, 0.7)
+texture = ExtResource("4_uls6k")
+flip_h = true
+
+[node name="cop" type="Sprite2D" parent="18/bg"]
+position = Vector2(180.5, 184.5)
+texture = ExtResource("8_1382f")
+
+[node name="dorian" type="Sprite2D" parent="18/bg"]
+position = Vector2(164.5, 245)
+texture = ExtResource("3_3m0rl")

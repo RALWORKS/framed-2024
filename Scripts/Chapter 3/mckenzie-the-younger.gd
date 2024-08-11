@@ -7,6 +7,7 @@ var OPTIONS = "OPTIONS"
 var HORROR = "HORROR"
 var HEART = "HEART"
 var CALM = "CALM"
+var END = "END"
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -27,7 +28,15 @@ func _ready():
 		[null, $"8", OPTIONS],
 		["9a", $"9", HORROR],
 		["10a", $"10"],
-		["11a", $"11"],
+		["11a", $"11", END],
+		[null, $"12"],
+		[null, $"13"],
+		[null, $"14"],
+		[null, $"15"],
+		[null, $"16"],
+		[null, $"17"],
+		["18a", $"18"],
+		["11a", $"11", END, HORROR],
 	]
 	play()
 	
@@ -45,6 +54,9 @@ func goto(to_index):
 	play()
 
 func next():
+	if END in sequence[index]:
+		end()
+		return
 	if paused or OPTIONS in sequence[index]:
 		return
 	index+=1
@@ -72,6 +84,10 @@ func play():
 func flip(to):
 	hide_panels()
 	to.visible = true
+
+func end():
+	# TODO
+	pass
 
 func _process(delta):
 	if Input.is_action_just_pressed("Next"):
