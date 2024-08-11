@@ -51,10 +51,10 @@ var slide_count = 0
 @onready var dorean_confused = $DoreanConfused
 @onready var dorean_phone_hand = $DoreanPhoneHand
 @onready var street_sign = $StreetSign
-@onready var marie_phone = $MariePhone
+@onready var marie_phone = $"Panel 1/MariePhone1"
 
 # Dialogue Boxes
-@onready var marie_1 = $MarieDialogue1
+@onready var marie_1 = $"Panel 1/Dialogue1"
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -66,6 +66,7 @@ func _ready():
 	street_sign.visible = false
 	marie_1.visible = false
 	marie_phone.visible = true
+	marie_1.visible = true
 	
 	pass # Replace with function body.
 
