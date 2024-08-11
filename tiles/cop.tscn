@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://cc4vp85roem7b"]
 
 [ext_resource type="Script" path="res://tiles/cop.gd" id="1_qvq4j"]
-[ext_resource type="Texture2D" uid="uid://c22p47qndlduh" path="res://tiles/dot.png" id="2_vj7qp"]
+[ext_resource type="Texture2D" uid="uid://ba0e82f21n4qc" path="res://Assets/Officer_sprite.png" id="2_ih0bk"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_eql7y"]
 radius = 58.0345
@@ -13,8 +13,7 @@ script = ExtResource("1_qvq4j")
 shape = SubResource("CircleShape2D_eql7y")
 
 [node name="Cop" type="Sprite2D" parent="."]
-modulate = Color(0, 0.737255, 0.913725, 1)
-texture = ExtResource("2_vj7qp")
+texture = ExtResource("2_ih0bk")
 
 [node name="Area2D" type="Area2D" parent="."]
 

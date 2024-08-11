@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://bqsh6et3ta8nc"]
 
-[ext_resource type="Texture2D" uid="uid://c22p47qndlduh" path="res://tiles/dot.png" id="1_kcd6c"]
+[ext_resource type="Texture2D" uid="uid://5yygcv1dscnw" path="res://Assets/Dorian_sprite.png" id="2_hu4hg"]
 [ext_resource type="Script" path="res://tiles/Dorian.gd" id="2_k4jg3"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_eql7y"]
@@ -13,4 +13,4 @@ script = ExtResource("2_k4jg3")
 shape = SubResource("CircleShape2D_eql7y")
 
 [node name="Dorian" type="Sprite2D" parent="."]
-texture = ExtResource("1_kcd6c")
+texture = ExtResource("2_hu4hg")

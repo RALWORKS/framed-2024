@@ -17,7 +17,6 @@ func _on_exit_area_body_entered(body):
 		win()
 
 func win():
-	# TODO
-	$Cop1.free()
-	$Cop2.free()
-	pass
+	Transition.transition()
+	await Transition.on_transition_finished
+	get_tree().change_scene_to_file("res://Scenes/Chapter 3/mc_kenzie_the_younger.tscn")
