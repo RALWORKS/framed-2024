@@ -42,6 +42,7 @@ DORIAN (VO): Murder?
 DORIAN (VO): After the year I've had, I ... wouldn't put it past myself.
 """
 
+
 # Variables
 var panel_count = 0
 
@@ -93,12 +94,36 @@ var dict = {
 @onready var panel7 = $"Panel 7"
 @onready var panel8 = $"Panel 8"
 
+var index = 0
+var paused = false
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	
 	# when scene starts - need to hide stuff
-	panel1.visible = true
+	hide_panels()
+	
+	#anim_play.play("Panel 1")
+	
+	sequence = [
+	["Panel 1", panel1],
+	["Panel 2", panel2],
+	["Panel 3", panel3],
+	["Panel 4a", panel4],
+	["Panel 4b", null],
+	["Panel 4c", null],
+	["Panel 4d", null],
+	["Panel 5", panel5],
+	["Panel 6", panel6],
+	["Panel 7", panel7],
+	["Panel 8", panel8],
+	]
+	play()
+	
+	
+
+func hide_panels():
+	panel1.visible = false
 	panel2.visible = false
 	panel3.visible = false
 	panel4.visible = false
@@ -106,16 +131,36 @@ func _ready():
 	panel6.visible = false
 	panel7.visible = false
 	panel8.visible = false
-	
-	anim_play.play("Panel 1")
-	panel_count += 1
-	
-	
-	
 
+var sequence = []
+
+func next():
+	if paused:
+		return
+	index+=1
+	play()
+	paused = true
+	await get_tree().create_timer(0.23).timeout
+	paused = false
+
+func play():
+	var page = sequence[index]
+	
+	if page[1] != null:
+		flip(page[1])
+	
+	if page[0] != null:
+		$AnimationPlayer.play(page[0])
+
+func flip(to):
+	hide_panels()
+	to.visible = true
 
 func _process(delta):
 	if Input.is_action_just_pressed("Next"):
+		next()
+		return
+	
 		if anim_play.current_animation != "Panel 8":
 			panel2.visible = true
 			panel1.visible = false
