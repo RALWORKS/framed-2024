@@ -108,8 +108,9 @@ func end():
 	get_tree().change_scene_to_file("res://Scenes/Chapter END/main_end.tscn")
 	
 func gameover():
-	# TODO
-	pass
+	Transition.transition()
+	await Transition.on_transition_finished
+	get_tree().change_scene_to_file("res://Scenes/credits.tscn")
 
 func _process(delta):
 	if Input.is_action_just_pressed("Next"):

@@ -1,0 +1,32 @@
+[gd_scene load_steps=7 format=3 uid="uid://7141r0kexxto"]
+
+[ext_resource type="Texture2D" uid="uid://3hng5ykaa8oi" path="res://Assets/credits tile.png" id="1_l7r26"]
+[ext_resource type="Script" path="res://Scripts/credits.gd" id="2_ckku4"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_d0prf"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ixfr3"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_boxvd"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_j1ecv"]
+
+[node name="Credits" type="Sprite2D"]
+texture = ExtResource("1_l7r26")
+centered = false
+script = ExtResource("2_ckku4")
+
+[node name="Click" type="Button" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -9.0
+offset_bottom = 4.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/normal = SubResource("StyleBoxEmpty_d0prf")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_ixfr3")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_boxvd")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_j1ecv")
+
+[connection signal="pressed" from="Click" to="." method="_on_click_pressed"]
