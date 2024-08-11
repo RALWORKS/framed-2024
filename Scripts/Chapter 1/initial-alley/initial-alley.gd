@@ -17,8 +17,6 @@ func _ready():
 	# when scene starts - need to hide stuff
 	hide_panels()
 	
-	
-	
 	sequence = [
 	["Panel 1", $"Panel 1"],
 	["Panel 2", $"Panel 2"],
@@ -32,16 +30,19 @@ func _ready():
 	["Panel 7", $"Panel 7", TRANSITION],
 	["Panel 8", $"Panel 8", TRANSITION],
 	[null, $"Panel 9", OPTIONS, TRANSITION],
-	["Panel 10", $"Panel 10", TRANSITION],
+	["Panel 10", $"Panel 10", TRANSITION], # 12
 	[null, $"Panel 11", OPTIONS],
 	["Panel 12", $"Panel 12", TRANSITION],
 	[null, $"Panel 13", OPTIONS],
 	["Panel 14", $"Panel 14", TRANSITION],
 	[null, $"Panel 15", OPTIONS],
-	["Panel 16a", $"Panel 16"],
+	["Panel 16a", $"Panel 16"], # 18
 	["Panel 16b", null],
 	["Panel 16c", null],
 	["Panel 16d", null],
+	["Panel 17", $"Panel 17", TRANSITION, END],
+	["Panel 18", $"Panel 18", TRANSITION], # 23
+	["Panel 19", $"Panel 19", TRANSITION],
 	["Panel 17", $"Panel 17", TRANSITION, END]
 	]
 	play()
